@@ -553,6 +553,196 @@ def parse_structs(text: str, fn_ptr_types: set, safe_types: set) -> list:
     return results
 
 
+def order_managed_structs(managed_structs: list, opaque_struct_names: list) -> list:
+    """Topologically order managed structs by field-type dependencies.
+
+    Rules:
+    - If struct A has a field whose base type is managed struct B, then B must
+      be registered before A.
+    - Opaque dependencies are considered already satisfied because opaque
+      annotations are emitted before managed annotations.
+    - Order is deterministic: original parse order is used as the tie-breaker.
+    """
+    managed_names = {das_name for das_name, _, _ in managed_structs}
+    opaque_names = set(opaque_struct_names)
+    original_index = {das_name: idx for idx, (das_name, _, _) in enumerate(managed_structs)}
+
+    # Build dependency map: node -> set(nodes it depends on)
+    deps = {}
+    for das_name, _, fields in managed_structs:
+        dep_set = set()
+        for _, base_type in fields:
+            if base_type == das_name:
+                continue
+            if base_type in managed_names:
+                dep_set.add(base_type)
+            elif base_type in opaque_names:
+                # Satisfied by opaque annotation pass.
+                continue
+        deps[das_name] = dep_set
+
+    # Build adjacency for SCC pass: dep -> user (registration direction).
+    forward_adj = {name: set() for name in managed_names}
+    reverse_adj = {name: set() for name in managed_names}
+    for user, dep_set in deps.items():
+        for dep in dep_set:
+            forward_adj[dep].add(user)
+            reverse_adj[user].add(dep)
+
+    # Kosaraju SCC decomposition.
+    visited = set()
+    finish_order = []
+
+    def dfs1(node: str):
+        visited.add(node)
+        for nxt in forward_adj[node]:
+            if nxt not in visited:
+                dfs1(nxt)
+        finish_order.append(node)
+
+    for name in sorted(managed_names, key=lambda n: original_index[n]):
+        if name not in visited:
+            dfs1(name)
+
+    comp_id_of = {}
+    components = []
+
+    def dfs2(node: str, cid: int):
+        comp_id_of[node] = cid
+        components[cid].append(node)
+        for nxt in reverse_adj[node]:
+            if nxt not in comp_id_of:
+                dfs2(nxt, cid)
+
+    for name in reversed(finish_order):
+        if name in comp_id_of:
+            continue
+        components.append([])
+        cid = len(components) - 1
+        dfs2(name, cid)
+
+    # Topologically order SCC DAG.
+    comp_count = len(components)
+    comp_incoming = [set() for _ in range(comp_count)]
+    comp_outgoing = [set() for _ in range(comp_count)]
+
+    for user, dep_set in deps.items():
+        user_c = comp_id_of[user]
+        for dep in dep_set:
+            dep_c = comp_id_of[dep]
+            if user_c == dep_c:
+                continue
+            comp_incoming[user_c].add(dep_c)
+            comp_outgoing[dep_c].add(user_c)
+
+    comp_first_idx = [min(original_index[name] for name in comp) for comp in components]
+    comp_indegree = [len(comp_incoming[c]) for c in range(comp_count)]
+    ready = sorted(
+        [c for c in range(comp_count) if comp_indegree[c] == 0],
+        key=lambda c: comp_first_idx[c],
+    )
+
+    ordered_components = []
+    while ready:
+        c = ready.pop(0)
+        ordered_components.append(c)
+        newly_ready = []
+        for nxt in comp_outgoing[c]:
+            comp_indegree[nxt] -= 1
+            if comp_indegree[nxt] == 0:
+                newly_ready.append(nxt)
+        if newly_ready:
+            ready.extend(newly_ready)
+            ready.sort(key=lambda x: comp_first_idx[x])
+
+    if len(ordered_components) != comp_count:
+        raise RuntimeError("Internal error: SCC condensation graph contains a cycle")
+
+    by_name = {das_name: (das_name, cpp_name, fields) for das_name, cpp_name, fields in managed_structs}
+    ordered_names = []
+    for c in ordered_components:
+        comp_nodes = sorted(components[c], key=lambda n: original_index[n])
+        ordered_names.extend(comp_nodes)
+
+    return [by_name[name] for name in ordered_names]
+
+
+def compute_intra_cycle_fields(managed_structs: list, opaque_struct_names: list) -> dict:
+    """Return {struct_name: set(field_names)} for fields that reference types
+    in the same dependency SCC.
+
+    Those fields are skipped in generated annotations to avoid irreducible
+    annotation-construction cycles (A needs B while B needs A).
+    """
+    managed_names = {das_name for das_name, _, _ in managed_structs}
+    opaque_names = set(opaque_struct_names)
+
+    deps = {}
+    by_name = {}
+    for das_name, _, fields in managed_structs:
+        by_name[das_name] = fields
+        dep_set = set()
+        for _, base_type in fields:
+            if base_type in managed_names:
+                dep_set.add(base_type)
+            elif base_type in opaque_names:
+                continue
+        deps[das_name] = dep_set
+
+    # Build graph user -> dependency for SCC detection.
+    forward = {name: set() for name in managed_names}
+    reverse = {name: set() for name in managed_names}
+    for user, dep_set in deps.items():
+        for dep in dep_set:
+            forward[user].add(dep)
+            reverse[dep].add(user)
+
+    visited = set()
+    finish_order = []
+
+    def dfs1(node: str):
+        visited.add(node)
+        for nxt in forward[node]:
+            if nxt not in visited:
+                dfs1(nxt)
+        finish_order.append(node)
+
+    for name in sorted(managed_names):
+        if name not in visited:
+            dfs1(name)
+
+    comp_id_of = {}
+    components = []
+
+    def dfs2(node: str, cid: int):
+        comp_id_of[node] = cid
+        components[cid].append(node)
+        for nxt in reverse[node]:
+            if nxt not in comp_id_of:
+                dfs2(nxt, cid)
+
+    for name in reversed(finish_order):
+        if name in comp_id_of:
+            continue
+        components.append([])
+        dfs2(name, len(components) - 1)
+
+    comp_size = {cid: len(nodes) for cid, nodes in enumerate(components)}
+    skipped = {}
+
+    for struct_name, fields in by_name.items():
+        cid = comp_id_of[struct_name]
+        for field_name, base_type in fields:
+            if base_type not in managed_names:
+                continue
+            base_cid = comp_id_of[base_type]
+            # Skip self-references and cross-references inside the same SCC.
+            if cid == base_cid and (base_type == struct_name or comp_size[cid] > 1):
+                skipped.setdefault(struct_name, set()).add(field_name)
+
+    return skipped
+
+
 # ─── Function parsing ────────────────────────────────────────────────────────
 
 def extract_namespace_imgui(text: str) -> str:
@@ -852,7 +1042,8 @@ def gen_enums_inc(enums: list) -> str:
 
 
 def gen_annotations_inc(opaque_structs: list, managed_structs: list,
-                        typed_enum_bindings: list = None) -> str:
+                        typed_enum_bindings: list = None,
+                        intra_cycle_fields: dict = None) -> str:
     """Generate module_imgui_annotations.inc - struct annotation classes."""
     lines = [_HEADER]
 
@@ -898,7 +1089,10 @@ def gen_annotations_inc(opaque_structs: list, managed_structs: list,
             f"    {cls}(das::ModuleLibrary &ml)"
             f' : ManagedStructureAnnotation("{das_name}", ml) {{'
         )
+        skipped_fields = intra_cycle_fields.get(das_name, set()) if intra_cycle_fields else set()
         for field_name, _ in fields:
+            if field_name in skipped_fields:
+                continue
             field_das_name = DAS_RESERVED_FIELD_RENAMES.get(field_name, field_name)
             lines.append(
                 f'        addField<DAS_BIND_MANAGED_FIELD({field_name})>'
@@ -1118,6 +1312,15 @@ def main():
         if das_name not in SKIP_STRUCTS
     ]
 
+    # Order managed structs by field dependencies so dependent annotations are
+    # registered only after the types they reference are already available.
+    managed_structs = order_managed_structs(managed_structs, opaque_struct_names)
+
+    # Some managed clusters form true cycles (e.g., mutual pointer fields).
+    # Skip intra-cycle fields in annotations to avoid makeHandleType failures
+    # while constructing annotation metadata.
+    intra_cycle_fields = compute_intra_cycle_fields(managed_structs, opaque_struct_names)
+
     # ── Parse functions ──────────────────────────────────────────────────
     ns_body = extract_namespace_imgui(text)
     raw_funcs = parse_imgui_functions(ns_body)
@@ -1177,7 +1380,12 @@ def main():
     # Annotations
     ann_path = os.path.join(out_dir, "module_imgui_annotations.inc")
     with open(ann_path, "w", newline="\n") as f:
-        f.write(gen_annotations_inc(opaque_struct_names, managed_structs, typed_enum_bindings))
+        f.write(gen_annotations_inc(
+            opaque_struct_names,
+            managed_structs,
+            typed_enum_bindings,
+            intra_cycle_fields,
+        ))
     print(f"  Wrote {ann_path}")
 
     # Register

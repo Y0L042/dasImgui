@@ -62,6 +62,7 @@ struct ImGuiTableColumnSortSpecsAnnotation : das::ManagedStructureAnnotation<ImG
         addField<DAS_BIND_MANAGED_FIELD(SortOrder)>("SortOrder", "SortOrder");
     }
 };
+
 MAKE_TYPE_FACTORY(ImGuiTableSortSpecs, ImGuiTableSortSpecs);
 struct ImGuiTableSortSpecsAnnotation : das::ManagedStructureAnnotation<ImGuiTableSortSpecs, false> {
     ImGuiTableSortSpecsAnnotation(das::ModuleLibrary &ml) : ManagedStructureAnnotation("ImGuiTableSortSpecs", ml) {
@@ -70,7 +71,6 @@ struct ImGuiTableSortSpecsAnnotation : das::ManagedStructureAnnotation<ImGuiTabl
         addField<DAS_BIND_MANAGED_FIELD(SpecsDirty)>("SpecsDirty", "SpecsDirty");
     }
 };
-
 
 MAKE_TYPE_FACTORY(ImGuiStyle, ImGuiStyle);
 struct ImGuiStyleAnnotation : das::ManagedStructureAnnotation<ImGuiStyle, false> {
@@ -155,106 +155,6 @@ struct ImGuiKeyDataAnnotation : das::ManagedStructureAnnotation<ImGuiKeyData, fa
         addField<DAS_BIND_MANAGED_FIELD(DownDuration)>("DownDuration", "DownDuration");
         addField<DAS_BIND_MANAGED_FIELD(DownDurationPrev)>("DownDurationPrev", "DownDurationPrev");
         addField<DAS_BIND_MANAGED_FIELD(AnalogValue)>("AnalogValue", "AnalogValue");
-    }
-};
-
-MAKE_TYPE_FACTORY(ImGuiIO, ImGuiIO);
-struct ImGuiIOAnnotation : das::ManagedStructureAnnotation<ImGuiIO, false> {
-    ImGuiIOAnnotation(das::ModuleLibrary &ml) : ManagedStructureAnnotation("ImGuiIO", ml) {
-        addField<DAS_BIND_MANAGED_FIELD(ConfigFlags)>("ConfigFlags", "ConfigFlags");
-        addField<DAS_BIND_MANAGED_FIELD(BackendFlags)>("BackendFlags", "BackendFlags");
-        addField<DAS_BIND_MANAGED_FIELD(DisplaySize)>("DisplaySize", "DisplaySize");
-        addField<DAS_BIND_MANAGED_FIELD(DisplayFramebufferScale)>("DisplayFramebufferScale", "DisplayFramebufferScale");
-        addField<DAS_BIND_MANAGED_FIELD(DeltaTime)>("DeltaTime", "DeltaTime");
-        addField<DAS_BIND_MANAGED_FIELD(IniSavingRate)>("IniSavingRate", "IniSavingRate");
-        addField<DAS_BIND_MANAGED_FIELD(IniFilename)>("IniFilename", "IniFilename");
-        addField<DAS_BIND_MANAGED_FIELD(LogFilename)>("LogFilename", "LogFilename");
-        addField<DAS_BIND_MANAGED_FIELD(UserData)>("UserData", "UserData");
-        addField<DAS_BIND_MANAGED_FIELD(Fonts)>("Fonts", "Fonts");
-        addField<DAS_BIND_MANAGED_FIELD(FontDefault)>("FontDefault", "FontDefault");
-        addField<DAS_BIND_MANAGED_FIELD(FontAllowUserScaling)>("FontAllowUserScaling", "FontAllowUserScaling");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigNavSwapGamepadButtons)>("ConfigNavSwapGamepadButtons", "ConfigNavSwapGamepadButtons");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigNavMoveSetMousePos)>("ConfigNavMoveSetMousePos", "ConfigNavMoveSetMousePos");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigNavCaptureKeyboard)>("ConfigNavCaptureKeyboard", "ConfigNavCaptureKeyboard");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigNavEscapeClearFocusItem)>("ConfigNavEscapeClearFocusItem", "ConfigNavEscapeClearFocusItem");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigNavEscapeClearFocusWindow)>("ConfigNavEscapeClearFocusWindow", "ConfigNavEscapeClearFocusWindow");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigNavCursorVisibleAuto)>("ConfigNavCursorVisibleAuto", "ConfigNavCursorVisibleAuto");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigNavCursorVisibleAlways)>("ConfigNavCursorVisibleAlways", "ConfigNavCursorVisibleAlways");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDockingNoSplit)>("ConfigDockingNoSplit", "ConfigDockingNoSplit");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDockingNoDockingOver)>("ConfigDockingNoDockingOver", "ConfigDockingNoDockingOver");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDockingWithShift)>("ConfigDockingWithShift", "ConfigDockingWithShift");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDockingAlwaysTabBar)>("ConfigDockingAlwaysTabBar", "ConfigDockingAlwaysTabBar");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDockingTransparentPayload)>("ConfigDockingTransparentPayload", "ConfigDockingTransparentPayload");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigViewportsNoAutoMerge)>("ConfigViewportsNoAutoMerge", "ConfigViewportsNoAutoMerge");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigViewportsNoTaskBarIcon)>("ConfigViewportsNoTaskBarIcon", "ConfigViewportsNoTaskBarIcon");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigViewportsNoDecoration)>("ConfigViewportsNoDecoration", "ConfigViewportsNoDecoration");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigViewportsNoDefaultParent)>("ConfigViewportsNoDefaultParent", "ConfigViewportsNoDefaultParent");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigViewportsPlatformFocusSetsImGuiFocus)>("ConfigViewportsPlatformFocusSetsImGuiFocus", "ConfigViewportsPlatformFocusSetsImGuiFocus");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDpiScaleFonts)>("ConfigDpiScaleFonts", "ConfigDpiScaleFonts");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDpiScaleViewports)>("ConfigDpiScaleViewports", "ConfigDpiScaleViewports");
-        addField<DAS_BIND_MANAGED_FIELD(MouseDrawCursor)>("MouseDrawCursor", "MouseDrawCursor");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigMacOSXBehaviors)>("ConfigMacOSXBehaviors", "ConfigMacOSXBehaviors");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigInputTrickleEventQueue)>("ConfigInputTrickleEventQueue", "ConfigInputTrickleEventQueue");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigInputTextCursorBlink)>("ConfigInputTextCursorBlink", "ConfigInputTextCursorBlink");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigInputTextEnterKeepActive)>("ConfigInputTextEnterKeepActive", "ConfigInputTextEnterKeepActive");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDragClickToInputText)>("ConfigDragClickToInputText", "ConfigDragClickToInputText");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigWindowsResizeFromEdges)>("ConfigWindowsResizeFromEdges", "ConfigWindowsResizeFromEdges");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigWindowsMoveFromTitleBarOnly)>("ConfigWindowsMoveFromTitleBarOnly", "ConfigWindowsMoveFromTitleBarOnly");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigWindowsCopyContentsWithCtrlC)>("ConfigWindowsCopyContentsWithCtrlC", "ConfigWindowsCopyContentsWithCtrlC");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigScrollbarScrollByPage)>("ConfigScrollbarScrollByPage", "ConfigScrollbarScrollByPage");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigMemoryCompactTimer)>("ConfigMemoryCompactTimer", "ConfigMemoryCompactTimer");
-        addField<DAS_BIND_MANAGED_FIELD(MouseDoubleClickTime)>("MouseDoubleClickTime", "MouseDoubleClickTime");
-        addField<DAS_BIND_MANAGED_FIELD(MouseDoubleClickMaxDist)>("MouseDoubleClickMaxDist", "MouseDoubleClickMaxDist");
-        addField<DAS_BIND_MANAGED_FIELD(MouseDragThreshold)>("MouseDragThreshold", "MouseDragThreshold");
-        addField<DAS_BIND_MANAGED_FIELD(KeyRepeatDelay)>("KeyRepeatDelay", "KeyRepeatDelay");
-        addField<DAS_BIND_MANAGED_FIELD(KeyRepeatRate)>("KeyRepeatRate", "KeyRepeatRate");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigErrorRecovery)>("ConfigErrorRecovery", "ConfigErrorRecovery");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigErrorRecoveryEnableAssert)>("ConfigErrorRecoveryEnableAssert", "ConfigErrorRecoveryEnableAssert");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigErrorRecoveryEnableDebugLog)>("ConfigErrorRecoveryEnableDebugLog", "ConfigErrorRecoveryEnableDebugLog");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigErrorRecoveryEnableTooltip)>("ConfigErrorRecoveryEnableTooltip", "ConfigErrorRecoveryEnableTooltip");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugIsDebuggerPresent)>("ConfigDebugIsDebuggerPresent", "ConfigDebugIsDebuggerPresent");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugHighlightIdConflicts)>("ConfigDebugHighlightIdConflicts", "ConfigDebugHighlightIdConflicts");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugHighlightIdConflictsShowItemPicker)>("ConfigDebugHighlightIdConflictsShowItemPicker", "ConfigDebugHighlightIdConflictsShowItemPicker");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugBeginReturnValueOnce)>("ConfigDebugBeginReturnValueOnce", "ConfigDebugBeginReturnValueOnce");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugBeginReturnValueLoop)>("ConfigDebugBeginReturnValueLoop", "ConfigDebugBeginReturnValueLoop");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugIgnoreFocusLoss)>("ConfigDebugIgnoreFocusLoss", "ConfigDebugIgnoreFocusLoss");
-        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugIniSettings)>("ConfigDebugIniSettings", "ConfigDebugIniSettings");
-        addField<DAS_BIND_MANAGED_FIELD(BackendPlatformName)>("BackendPlatformName", "BackendPlatformName");
-        addField<DAS_BIND_MANAGED_FIELD(BackendRendererName)>("BackendRendererName", "BackendRendererName");
-        addField<DAS_BIND_MANAGED_FIELD(BackendPlatformUserData)>("BackendPlatformUserData", "BackendPlatformUserData");
-        addField<DAS_BIND_MANAGED_FIELD(BackendRendererUserData)>("BackendRendererUserData", "BackendRendererUserData");
-        addField<DAS_BIND_MANAGED_FIELD(BackendLanguageUserData)>("BackendLanguageUserData", "BackendLanguageUserData");
-        addField<DAS_BIND_MANAGED_FIELD(WantCaptureMouse)>("WantCaptureMouse", "WantCaptureMouse");
-        addField<DAS_BIND_MANAGED_FIELD(WantCaptureKeyboard)>("WantCaptureKeyboard", "WantCaptureKeyboard");
-        addField<DAS_BIND_MANAGED_FIELD(WantTextInput)>("WantTextInput", "WantTextInput");
-        addField<DAS_BIND_MANAGED_FIELD(WantSetMousePos)>("WantSetMousePos", "WantSetMousePos");
-        addField<DAS_BIND_MANAGED_FIELD(WantSaveIniSettings)>("WantSaveIniSettings", "WantSaveIniSettings");
-        addField<DAS_BIND_MANAGED_FIELD(NavActive)>("NavActive", "NavActive");
-        addField<DAS_BIND_MANAGED_FIELD(NavVisible)>("NavVisible", "NavVisible");
-        addField<DAS_BIND_MANAGED_FIELD(Framerate)>("Framerate", "Framerate");
-        addField<DAS_BIND_MANAGED_FIELD(MetricsRenderVertices)>("MetricsRenderVertices", "MetricsRenderVertices");
-        addField<DAS_BIND_MANAGED_FIELD(MetricsRenderIndices)>("MetricsRenderIndices", "MetricsRenderIndices");
-        addField<DAS_BIND_MANAGED_FIELD(MetricsRenderWindows)>("MetricsRenderWindows", "MetricsRenderWindows");
-        addField<DAS_BIND_MANAGED_FIELD(MetricsActiveWindows)>("MetricsActiveWindows", "MetricsActiveWindows");
-        addField<DAS_BIND_MANAGED_FIELD(MouseDelta)>("MouseDelta", "MouseDelta");
-        addField<DAS_BIND_MANAGED_FIELD(Ctx)>("Ctx", "Ctx");
-        addField<DAS_BIND_MANAGED_FIELD(MousePos)>("MousePos", "MousePos");
-        addField<DAS_BIND_MANAGED_FIELD(MouseWheel)>("MouseWheel", "MouseWheel");
-        addField<DAS_BIND_MANAGED_FIELD(MouseWheelH)>("MouseWheelH", "MouseWheelH");
-        addField<DAS_BIND_MANAGED_FIELD(MouseHoveredViewport)>("MouseHoveredViewport", "MouseHoveredViewport");
-        addField<DAS_BIND_MANAGED_FIELD(KeyCtrl)>("KeyCtrl", "KeyCtrl");
-        addField<DAS_BIND_MANAGED_FIELD(KeyShift)>("KeyShift", "KeyShift");
-        addField<DAS_BIND_MANAGED_FIELD(KeyAlt)>("KeyAlt", "KeyAlt");
-        addField<DAS_BIND_MANAGED_FIELD(KeySuper)>("KeySuper", "KeySuper");
-        addField<DAS_BIND_MANAGED_FIELD(KeyMods)>("KeyMods", "KeyMods");
-        addField<DAS_BIND_MANAGED_FIELD(WantCaptureMouseUnlessPopupClose)>("WantCaptureMouseUnlessPopupClose", "WantCaptureMouseUnlessPopupClose");
-        addField<DAS_BIND_MANAGED_FIELD(MousePosPrev)>("MousePosPrev", "MousePosPrev");
-        addField<DAS_BIND_MANAGED_FIELD(MouseWheelRequestAxisSwap)>("MouseWheelRequestAxisSwap", "MouseWheelRequestAxisSwap");
-        addField<DAS_BIND_MANAGED_FIELD(MouseCtrlLeftAsRightClick)>("MouseCtrlLeftAsRightClick", "MouseCtrlLeftAsRightClick");
-        addField<DAS_BIND_MANAGED_FIELD(PenPressure)>("PenPressure", "PenPressure");
-        addField<DAS_BIND_MANAGED_FIELD(AppFocusLost)>("AppFocusLost", "AppFocusLost");
-        addField<DAS_BIND_MANAGED_FIELD(AppAcceptingEvents)>("AppAcceptingEvents", "AppAcceptingEvents");
-        addField<DAS_BIND_MANAGED_FIELD(InputQueueSurrogate)>("InputQueueSurrogate", "InputQueueSurrogate");
     }
 };
 
@@ -451,7 +351,29 @@ struct ImDrawDataAnnotation : das::ManagedStructureAnnotation<ImDrawData, false>
         addField<DAS_BIND_MANAGED_FIELD(DisplayPos)>("DisplayPos", "DisplayPos");
         addField<DAS_BIND_MANAGED_FIELD(DisplaySize)>("DisplaySize", "DisplaySize");
         addField<DAS_BIND_MANAGED_FIELD(FramebufferScale)>("FramebufferScale", "FramebufferScale");
-        addField<DAS_BIND_MANAGED_FIELD(OwnerViewport)>("OwnerViewport", "OwnerViewport");
+    }
+};
+
+MAKE_TYPE_FACTORY(ImGuiViewport, ImGuiViewport);
+struct ImGuiViewportAnnotation : das::ManagedStructureAnnotation<ImGuiViewport, false> {
+    ImGuiViewportAnnotation(das::ModuleLibrary &ml) : ManagedStructureAnnotation("ImGuiViewport", ml) {
+        addField<DAS_BIND_MANAGED_FIELD(ID)>("ID", "ID");
+        addField<DAS_BIND_MANAGED_FIELD(Flags)>("Flags", "Flags");
+        addField<DAS_BIND_MANAGED_FIELD(Pos)>("Pos", "Pos");
+        addField<DAS_BIND_MANAGED_FIELD(Size)>("Size", "Size");
+        addField<DAS_BIND_MANAGED_FIELD(FramebufferScale)>("FramebufferScale", "FramebufferScale");
+        addField<DAS_BIND_MANAGED_FIELD(WorkPos)>("WorkPos", "WorkPos");
+        addField<DAS_BIND_MANAGED_FIELD(WorkSize)>("WorkSize", "WorkSize");
+        addField<DAS_BIND_MANAGED_FIELD(DpiScale)>("DpiScale", "DpiScale");
+        addField<DAS_BIND_MANAGED_FIELD(ParentViewportId)>("ParentViewportId", "ParentViewportId");
+        addField<DAS_BIND_MANAGED_FIELD(RendererUserData)>("RendererUserData", "RendererUserData");
+        addField<DAS_BIND_MANAGED_FIELD(PlatformUserData)>("PlatformUserData", "PlatformUserData");
+        addField<DAS_BIND_MANAGED_FIELD(PlatformHandle)>("PlatformHandle", "PlatformHandle");
+        addField<DAS_BIND_MANAGED_FIELD(PlatformHandleRaw)>("PlatformHandleRaw", "PlatformHandleRaw");
+        addField<DAS_BIND_MANAGED_FIELD(PlatformWindowCreated)>("PlatformWindowCreated", "PlatformWindowCreated");
+        addField<DAS_BIND_MANAGED_FIELD(PlatformRequestMove)>("PlatformRequestMove", "PlatformRequestMove");
+        addField<DAS_BIND_MANAGED_FIELD(PlatformRequestResize)>("PlatformRequestResize", "PlatformRequestResize");
+        addField<DAS_BIND_MANAGED_FIELD(PlatformRequestClose)>("PlatformRequestClose", "PlatformRequestClose");
     }
 };
 
@@ -477,36 +399,6 @@ struct ImTextureDataAnnotation : das::ManagedStructureAnnotation<ImTextureData, 
         addField<DAS_BIND_MANAGED_FIELD(RefCount)>("RefCount", "RefCount");
         addField<DAS_BIND_MANAGED_FIELD(UseColors)>("UseColors", "UseColors");
         addField<DAS_BIND_MANAGED_FIELD(WantDestroyNextFrame)>("WantDestroyNextFrame", "WantDestroyNextFrame");
-    }
-};
-
-MAKE_TYPE_FACTORY(ImFontConfig, ImFontConfig);
-struct ImFontConfigAnnotation : das::ManagedStructureAnnotation<ImFontConfig, false> {
-    ImFontConfigAnnotation(das::ModuleLibrary &ml) : ManagedStructureAnnotation("ImFontConfig", ml) {
-        addField<DAS_BIND_MANAGED_FIELD(FontData)>("FontData", "FontData");
-        addField<DAS_BIND_MANAGED_FIELD(FontDataSize)>("FontDataSize", "FontDataSize");
-        addField<DAS_BIND_MANAGED_FIELD(FontDataOwnedByAtlas)>("FontDataOwnedByAtlas", "FontDataOwnedByAtlas");
-        addField<DAS_BIND_MANAGED_FIELD(MergeMode)>("MergeMode", "MergeMode");
-        addField<DAS_BIND_MANAGED_FIELD(PixelSnapH)>("PixelSnapH", "PixelSnapH");
-        addField<DAS_BIND_MANAGED_FIELD(OversampleH)>("OversampleH", "OversampleH");
-        addField<DAS_BIND_MANAGED_FIELD(OversampleV)>("OversampleV", "OversampleV");
-        addField<DAS_BIND_MANAGED_FIELD(EllipsisChar)>("EllipsisChar", "EllipsisChar");
-        addField<DAS_BIND_MANAGED_FIELD(SizePixels)>("SizePixels", "SizePixels");
-        addField<DAS_BIND_MANAGED_FIELD(GlyphRanges)>("GlyphRanges", "GlyphRanges");
-        addField<DAS_BIND_MANAGED_FIELD(GlyphExcludeRanges)>("GlyphExcludeRanges", "GlyphExcludeRanges");
-        addField<DAS_BIND_MANAGED_FIELD(GlyphOffset)>("GlyphOffset", "GlyphOffset");
-        addField<DAS_BIND_MANAGED_FIELD(GlyphMinAdvanceX)>("GlyphMinAdvanceX", "GlyphMinAdvanceX");
-        addField<DAS_BIND_MANAGED_FIELD(GlyphMaxAdvanceX)>("GlyphMaxAdvanceX", "GlyphMaxAdvanceX");
-        addField<DAS_BIND_MANAGED_FIELD(GlyphExtraAdvanceX)>("GlyphExtraAdvanceX", "GlyphExtraAdvanceX");
-        addField<DAS_BIND_MANAGED_FIELD(FontNo)>("FontNo", "FontNo");
-        addField<DAS_BIND_MANAGED_FIELD(FontLoaderFlags)>("FontLoaderFlags", "FontLoaderFlags");
-        addField<DAS_BIND_MANAGED_FIELD(RasterizerMultiply)>("RasterizerMultiply", "RasterizerMultiply");
-        addField<DAS_BIND_MANAGED_FIELD(RasterizerDensity)>("RasterizerDensity", "RasterizerDensity");
-        addField<DAS_BIND_MANAGED_FIELD(ExtraSizeScale)>("ExtraSizeScale", "ExtraSizeScale");
-        addField<DAS_BIND_MANAGED_FIELD(Flags)>("Flags", "Flags");
-        addField<DAS_BIND_MANAGED_FIELD(DstFont)>("DstFont", "DstFont");
-        addField<DAS_BIND_MANAGED_FIELD(FontLoader)>("FontLoader", "FontLoader");
-        addField<DAS_BIND_MANAGED_FIELD(FontLoaderData)>("FontLoaderData", "FontLoaderData");
     }
 };
 
@@ -579,7 +471,6 @@ struct ImFontBakedAnnotation : das::ManagedStructureAnnotation<ImFontBaked, fals
         addField<DAS_BIND_MANAGED_FIELD(Descent)>("Descent", "Descent");
         addField<DAS_BIND_MANAGED_FIELD(LastUsedFrame)>("LastUsedFrame", "LastUsedFrame");
         addField<DAS_BIND_MANAGED_FIELD(BakedId)>("BakedId", "BakedId");
-        addField<DAS_BIND_MANAGED_FIELD(OwnerFont)>("OwnerFont", "OwnerFont");
         addField<DAS_BIND_MANAGED_FIELD(FontLoaderDatas)>("FontLoaderDatas", "FontLoaderDatas");
     }
 };
@@ -587,7 +478,6 @@ struct ImFontBakedAnnotation : das::ManagedStructureAnnotation<ImFontBaked, fals
 MAKE_TYPE_FACTORY(ImFont, ImFont);
 struct ImFontAnnotation : das::ManagedStructureAnnotation<ImFont, false> {
     ImFontAnnotation(das::ModuleLibrary &ml) : ManagedStructureAnnotation("ImFont", ml) {
-        addField<DAS_BIND_MANAGED_FIELD(LastBaked)>("LastBaked", "LastBaked");
         addField<DAS_BIND_MANAGED_FIELD(OwnerAtlas)>("OwnerAtlas", "OwnerAtlas");
         addField<DAS_BIND_MANAGED_FIELD(Flags)>("Flags", "Flags");
         addField<DAS_BIND_MANAGED_FIELD(CurrentRasterizerDensity)>("CurrentRasterizerDensity", "CurrentRasterizerDensity");
@@ -600,28 +490,133 @@ struct ImFontAnnotation : das::ManagedStructureAnnotation<ImFont, false> {
     }
 };
 
-MAKE_TYPE_FACTORY(ImGuiViewport, ImGuiViewport);
-struct ImGuiViewportAnnotation : das::ManagedStructureAnnotation<ImGuiViewport, false> {
-    ImGuiViewportAnnotation(das::ModuleLibrary &ml) : ManagedStructureAnnotation("ImGuiViewport", ml) {
-        addField<DAS_BIND_MANAGED_FIELD(ID)>("ID", "ID");
+MAKE_TYPE_FACTORY(ImGuiIO, ImGuiIO);
+struct ImGuiIOAnnotation : das::ManagedStructureAnnotation<ImGuiIO, false> {
+    ImGuiIOAnnotation(das::ModuleLibrary &ml) : ManagedStructureAnnotation("ImGuiIO", ml) {
+        addField<DAS_BIND_MANAGED_FIELD(ConfigFlags)>("ConfigFlags", "ConfigFlags");
+        addField<DAS_BIND_MANAGED_FIELD(BackendFlags)>("BackendFlags", "BackendFlags");
+        addField<DAS_BIND_MANAGED_FIELD(DisplaySize)>("DisplaySize", "DisplaySize");
+        addField<DAS_BIND_MANAGED_FIELD(DisplayFramebufferScale)>("DisplayFramebufferScale", "DisplayFramebufferScale");
+        addField<DAS_BIND_MANAGED_FIELD(DeltaTime)>("DeltaTime", "DeltaTime");
+        addField<DAS_BIND_MANAGED_FIELD(IniSavingRate)>("IniSavingRate", "IniSavingRate");
+        addField<DAS_BIND_MANAGED_FIELD(IniFilename)>("IniFilename", "IniFilename");
+        addField<DAS_BIND_MANAGED_FIELD(LogFilename)>("LogFilename", "LogFilename");
+        addField<DAS_BIND_MANAGED_FIELD(UserData)>("UserData", "UserData");
+        addField<DAS_BIND_MANAGED_FIELD(Fonts)>("Fonts", "Fonts");
+        addField<DAS_BIND_MANAGED_FIELD(FontDefault)>("FontDefault", "FontDefault");
+        addField<DAS_BIND_MANAGED_FIELD(FontAllowUserScaling)>("FontAllowUserScaling", "FontAllowUserScaling");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigNavSwapGamepadButtons)>("ConfigNavSwapGamepadButtons", "ConfigNavSwapGamepadButtons");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigNavMoveSetMousePos)>("ConfigNavMoveSetMousePos", "ConfigNavMoveSetMousePos");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigNavCaptureKeyboard)>("ConfigNavCaptureKeyboard", "ConfigNavCaptureKeyboard");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigNavEscapeClearFocusItem)>("ConfigNavEscapeClearFocusItem", "ConfigNavEscapeClearFocusItem");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigNavEscapeClearFocusWindow)>("ConfigNavEscapeClearFocusWindow", "ConfigNavEscapeClearFocusWindow");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigNavCursorVisibleAuto)>("ConfigNavCursorVisibleAuto", "ConfigNavCursorVisibleAuto");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigNavCursorVisibleAlways)>("ConfigNavCursorVisibleAlways", "ConfigNavCursorVisibleAlways");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDockingNoSplit)>("ConfigDockingNoSplit", "ConfigDockingNoSplit");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDockingNoDockingOver)>("ConfigDockingNoDockingOver", "ConfigDockingNoDockingOver");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDockingWithShift)>("ConfigDockingWithShift", "ConfigDockingWithShift");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDockingAlwaysTabBar)>("ConfigDockingAlwaysTabBar", "ConfigDockingAlwaysTabBar");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDockingTransparentPayload)>("ConfigDockingTransparentPayload", "ConfigDockingTransparentPayload");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigViewportsNoAutoMerge)>("ConfigViewportsNoAutoMerge", "ConfigViewportsNoAutoMerge");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigViewportsNoTaskBarIcon)>("ConfigViewportsNoTaskBarIcon", "ConfigViewportsNoTaskBarIcon");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigViewportsNoDecoration)>("ConfigViewportsNoDecoration", "ConfigViewportsNoDecoration");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigViewportsNoDefaultParent)>("ConfigViewportsNoDefaultParent", "ConfigViewportsNoDefaultParent");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigViewportsPlatformFocusSetsImGuiFocus)>("ConfigViewportsPlatformFocusSetsImGuiFocus", "ConfigViewportsPlatformFocusSetsImGuiFocus");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDpiScaleFonts)>("ConfigDpiScaleFonts", "ConfigDpiScaleFonts");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDpiScaleViewports)>("ConfigDpiScaleViewports", "ConfigDpiScaleViewports");
+        addField<DAS_BIND_MANAGED_FIELD(MouseDrawCursor)>("MouseDrawCursor", "MouseDrawCursor");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigMacOSXBehaviors)>("ConfigMacOSXBehaviors", "ConfigMacOSXBehaviors");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigInputTrickleEventQueue)>("ConfigInputTrickleEventQueue", "ConfigInputTrickleEventQueue");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigInputTextCursorBlink)>("ConfigInputTextCursorBlink", "ConfigInputTextCursorBlink");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigInputTextEnterKeepActive)>("ConfigInputTextEnterKeepActive", "ConfigInputTextEnterKeepActive");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDragClickToInputText)>("ConfigDragClickToInputText", "ConfigDragClickToInputText");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigWindowsResizeFromEdges)>("ConfigWindowsResizeFromEdges", "ConfigWindowsResizeFromEdges");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigWindowsMoveFromTitleBarOnly)>("ConfigWindowsMoveFromTitleBarOnly", "ConfigWindowsMoveFromTitleBarOnly");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigWindowsCopyContentsWithCtrlC)>("ConfigWindowsCopyContentsWithCtrlC", "ConfigWindowsCopyContentsWithCtrlC");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigScrollbarScrollByPage)>("ConfigScrollbarScrollByPage", "ConfigScrollbarScrollByPage");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigMemoryCompactTimer)>("ConfigMemoryCompactTimer", "ConfigMemoryCompactTimer");
+        addField<DAS_BIND_MANAGED_FIELD(MouseDoubleClickTime)>("MouseDoubleClickTime", "MouseDoubleClickTime");
+        addField<DAS_BIND_MANAGED_FIELD(MouseDoubleClickMaxDist)>("MouseDoubleClickMaxDist", "MouseDoubleClickMaxDist");
+        addField<DAS_BIND_MANAGED_FIELD(MouseDragThreshold)>("MouseDragThreshold", "MouseDragThreshold");
+        addField<DAS_BIND_MANAGED_FIELD(KeyRepeatDelay)>("KeyRepeatDelay", "KeyRepeatDelay");
+        addField<DAS_BIND_MANAGED_FIELD(KeyRepeatRate)>("KeyRepeatRate", "KeyRepeatRate");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigErrorRecovery)>("ConfigErrorRecovery", "ConfigErrorRecovery");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigErrorRecoveryEnableAssert)>("ConfigErrorRecoveryEnableAssert", "ConfigErrorRecoveryEnableAssert");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigErrorRecoveryEnableDebugLog)>("ConfigErrorRecoveryEnableDebugLog", "ConfigErrorRecoveryEnableDebugLog");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigErrorRecoveryEnableTooltip)>("ConfigErrorRecoveryEnableTooltip", "ConfigErrorRecoveryEnableTooltip");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugIsDebuggerPresent)>("ConfigDebugIsDebuggerPresent", "ConfigDebugIsDebuggerPresent");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugHighlightIdConflicts)>("ConfigDebugHighlightIdConflicts", "ConfigDebugHighlightIdConflicts");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugHighlightIdConflictsShowItemPicker)>("ConfigDebugHighlightIdConflictsShowItemPicker", "ConfigDebugHighlightIdConflictsShowItemPicker");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugBeginReturnValueOnce)>("ConfigDebugBeginReturnValueOnce", "ConfigDebugBeginReturnValueOnce");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugBeginReturnValueLoop)>("ConfigDebugBeginReturnValueLoop", "ConfigDebugBeginReturnValueLoop");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugIgnoreFocusLoss)>("ConfigDebugIgnoreFocusLoss", "ConfigDebugIgnoreFocusLoss");
+        addField<DAS_BIND_MANAGED_FIELD(ConfigDebugIniSettings)>("ConfigDebugIniSettings", "ConfigDebugIniSettings");
+        addField<DAS_BIND_MANAGED_FIELD(BackendPlatformName)>("BackendPlatformName", "BackendPlatformName");
+        addField<DAS_BIND_MANAGED_FIELD(BackendRendererName)>("BackendRendererName", "BackendRendererName");
+        addField<DAS_BIND_MANAGED_FIELD(BackendPlatformUserData)>("BackendPlatformUserData", "BackendPlatformUserData");
+        addField<DAS_BIND_MANAGED_FIELD(BackendRendererUserData)>("BackendRendererUserData", "BackendRendererUserData");
+        addField<DAS_BIND_MANAGED_FIELD(BackendLanguageUserData)>("BackendLanguageUserData", "BackendLanguageUserData");
+        addField<DAS_BIND_MANAGED_FIELD(WantCaptureMouse)>("WantCaptureMouse", "WantCaptureMouse");
+        addField<DAS_BIND_MANAGED_FIELD(WantCaptureKeyboard)>("WantCaptureKeyboard", "WantCaptureKeyboard");
+        addField<DAS_BIND_MANAGED_FIELD(WantTextInput)>("WantTextInput", "WantTextInput");
+        addField<DAS_BIND_MANAGED_FIELD(WantSetMousePos)>("WantSetMousePos", "WantSetMousePos");
+        addField<DAS_BIND_MANAGED_FIELD(WantSaveIniSettings)>("WantSaveIniSettings", "WantSaveIniSettings");
+        addField<DAS_BIND_MANAGED_FIELD(NavActive)>("NavActive", "NavActive");
+        addField<DAS_BIND_MANAGED_FIELD(NavVisible)>("NavVisible", "NavVisible");
+        addField<DAS_BIND_MANAGED_FIELD(Framerate)>("Framerate", "Framerate");
+        addField<DAS_BIND_MANAGED_FIELD(MetricsRenderVertices)>("MetricsRenderVertices", "MetricsRenderVertices");
+        addField<DAS_BIND_MANAGED_FIELD(MetricsRenderIndices)>("MetricsRenderIndices", "MetricsRenderIndices");
+        addField<DAS_BIND_MANAGED_FIELD(MetricsRenderWindows)>("MetricsRenderWindows", "MetricsRenderWindows");
+        addField<DAS_BIND_MANAGED_FIELD(MetricsActiveWindows)>("MetricsActiveWindows", "MetricsActiveWindows");
+        addField<DAS_BIND_MANAGED_FIELD(MouseDelta)>("MouseDelta", "MouseDelta");
+        addField<DAS_BIND_MANAGED_FIELD(Ctx)>("Ctx", "Ctx");
+        addField<DAS_BIND_MANAGED_FIELD(MousePos)>("MousePos", "MousePos");
+        addField<DAS_BIND_MANAGED_FIELD(MouseWheel)>("MouseWheel", "MouseWheel");
+        addField<DAS_BIND_MANAGED_FIELD(MouseWheelH)>("MouseWheelH", "MouseWheelH");
+        addField<DAS_BIND_MANAGED_FIELD(MouseHoveredViewport)>("MouseHoveredViewport", "MouseHoveredViewport");
+        addField<DAS_BIND_MANAGED_FIELD(KeyCtrl)>("KeyCtrl", "KeyCtrl");
+        addField<DAS_BIND_MANAGED_FIELD(KeyShift)>("KeyShift", "KeyShift");
+        addField<DAS_BIND_MANAGED_FIELD(KeyAlt)>("KeyAlt", "KeyAlt");
+        addField<DAS_BIND_MANAGED_FIELD(KeySuper)>("KeySuper", "KeySuper");
+        addField<DAS_BIND_MANAGED_FIELD(KeyMods)>("KeyMods", "KeyMods");
+        addField<DAS_BIND_MANAGED_FIELD(WantCaptureMouseUnlessPopupClose)>("WantCaptureMouseUnlessPopupClose", "WantCaptureMouseUnlessPopupClose");
+        addField<DAS_BIND_MANAGED_FIELD(MousePosPrev)>("MousePosPrev", "MousePosPrev");
+        addField<DAS_BIND_MANAGED_FIELD(MouseWheelRequestAxisSwap)>("MouseWheelRequestAxisSwap", "MouseWheelRequestAxisSwap");
+        addField<DAS_BIND_MANAGED_FIELD(MouseCtrlLeftAsRightClick)>("MouseCtrlLeftAsRightClick", "MouseCtrlLeftAsRightClick");
+        addField<DAS_BIND_MANAGED_FIELD(PenPressure)>("PenPressure", "PenPressure");
+        addField<DAS_BIND_MANAGED_FIELD(AppFocusLost)>("AppFocusLost", "AppFocusLost");
+        addField<DAS_BIND_MANAGED_FIELD(AppAcceptingEvents)>("AppAcceptingEvents", "AppAcceptingEvents");
+        addField<DAS_BIND_MANAGED_FIELD(InputQueueSurrogate)>("InputQueueSurrogate", "InputQueueSurrogate");
+    }
+};
+
+MAKE_TYPE_FACTORY(ImFontConfig, ImFontConfig);
+struct ImFontConfigAnnotation : das::ManagedStructureAnnotation<ImFontConfig, false> {
+    ImFontConfigAnnotation(das::ModuleLibrary &ml) : ManagedStructureAnnotation("ImFontConfig", ml) {
+        addField<DAS_BIND_MANAGED_FIELD(FontData)>("FontData", "FontData");
+        addField<DAS_BIND_MANAGED_FIELD(FontDataSize)>("FontDataSize", "FontDataSize");
+        addField<DAS_BIND_MANAGED_FIELD(FontDataOwnedByAtlas)>("FontDataOwnedByAtlas", "FontDataOwnedByAtlas");
+        addField<DAS_BIND_MANAGED_FIELD(MergeMode)>("MergeMode", "MergeMode");
+        addField<DAS_BIND_MANAGED_FIELD(PixelSnapH)>("PixelSnapH", "PixelSnapH");
+        addField<DAS_BIND_MANAGED_FIELD(OversampleH)>("OversampleH", "OversampleH");
+        addField<DAS_BIND_MANAGED_FIELD(OversampleV)>("OversampleV", "OversampleV");
+        addField<DAS_BIND_MANAGED_FIELD(EllipsisChar)>("EllipsisChar", "EllipsisChar");
+        addField<DAS_BIND_MANAGED_FIELD(SizePixels)>("SizePixels", "SizePixels");
+        addField<DAS_BIND_MANAGED_FIELD(GlyphRanges)>("GlyphRanges", "GlyphRanges");
+        addField<DAS_BIND_MANAGED_FIELD(GlyphExcludeRanges)>("GlyphExcludeRanges", "GlyphExcludeRanges");
+        addField<DAS_BIND_MANAGED_FIELD(GlyphOffset)>("GlyphOffset", "GlyphOffset");
+        addField<DAS_BIND_MANAGED_FIELD(GlyphMinAdvanceX)>("GlyphMinAdvanceX", "GlyphMinAdvanceX");
+        addField<DAS_BIND_MANAGED_FIELD(GlyphMaxAdvanceX)>("GlyphMaxAdvanceX", "GlyphMaxAdvanceX");
+        addField<DAS_BIND_MANAGED_FIELD(GlyphExtraAdvanceX)>("GlyphExtraAdvanceX", "GlyphExtraAdvanceX");
+        addField<DAS_BIND_MANAGED_FIELD(FontNo)>("FontNo", "FontNo");
+        addField<DAS_BIND_MANAGED_FIELD(FontLoaderFlags)>("FontLoaderFlags", "FontLoaderFlags");
+        addField<DAS_BIND_MANAGED_FIELD(RasterizerMultiply)>("RasterizerMultiply", "RasterizerMultiply");
+        addField<DAS_BIND_MANAGED_FIELD(RasterizerDensity)>("RasterizerDensity", "RasterizerDensity");
+        addField<DAS_BIND_MANAGED_FIELD(ExtraSizeScale)>("ExtraSizeScale", "ExtraSizeScale");
         addField<DAS_BIND_MANAGED_FIELD(Flags)>("Flags", "Flags");
-        addField<DAS_BIND_MANAGED_FIELD(Pos)>("Pos", "Pos");
-        addField<DAS_BIND_MANAGED_FIELD(Size)>("Size", "Size");
-        addField<DAS_BIND_MANAGED_FIELD(FramebufferScale)>("FramebufferScale", "FramebufferScale");
-        addField<DAS_BIND_MANAGED_FIELD(WorkPos)>("WorkPos", "WorkPos");
-        addField<DAS_BIND_MANAGED_FIELD(WorkSize)>("WorkSize", "WorkSize");
-        addField<DAS_BIND_MANAGED_FIELD(DpiScale)>("DpiScale", "DpiScale");
-        addField<DAS_BIND_MANAGED_FIELD(ParentViewportId)>("ParentViewportId", "ParentViewportId");
-        addField<DAS_BIND_MANAGED_FIELD(ParentViewport)>("ParentViewport", "ParentViewport");
-        addField<DAS_BIND_MANAGED_FIELD(DrawData)>("DrawData", "DrawData");
-        addField<DAS_BIND_MANAGED_FIELD(RendererUserData)>("RendererUserData", "RendererUserData");
-        addField<DAS_BIND_MANAGED_FIELD(PlatformUserData)>("PlatformUserData", "PlatformUserData");
-        addField<DAS_BIND_MANAGED_FIELD(PlatformHandle)>("PlatformHandle", "PlatformHandle");
-        addField<DAS_BIND_MANAGED_FIELD(PlatformHandleRaw)>("PlatformHandleRaw", "PlatformHandleRaw");
-        addField<DAS_BIND_MANAGED_FIELD(PlatformWindowCreated)>("PlatformWindowCreated", "PlatformWindowCreated");
-        addField<DAS_BIND_MANAGED_FIELD(PlatformRequestMove)>("PlatformRequestMove", "PlatformRequestMove");
-        addField<DAS_BIND_MANAGED_FIELD(PlatformRequestResize)>("PlatformRequestResize", "PlatformRequestResize");
-        addField<DAS_BIND_MANAGED_FIELD(PlatformRequestClose)>("PlatformRequestClose", "PlatformRequestClose");
+        addField<DAS_BIND_MANAGED_FIELD(DstFont)>("DstFont", "DstFont");
+        addField<DAS_BIND_MANAGED_FIELD(FontLoader)>("FontLoader", "FontLoader");
+        addField<DAS_BIND_MANAGED_FIELD(FontLoaderData)>("FontLoaderData", "FontLoaderData");
     }
 };
 

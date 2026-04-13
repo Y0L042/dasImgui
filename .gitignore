@@ -12,3 +12,4 @@ src/imgui_vulkan_headers.h.json.log
 bin-int
 bin
 *.vcxproj*
+tools/__pycache__/gen_imgui_bindings.cpython-313.pyc

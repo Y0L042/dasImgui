@@ -475,7 +475,7 @@ void das::Module_imgui::initMain()
     // --- ImColor ---
     addExtern<DAS_BIND_FUN(das::imgui_HSV)>(*this, lib, "HSV", SideEffects::none, "das::imgui_HSV")
         ->args({"h", "s", "v", "a"})
-        ->arg_init(3, make_smart<ExprConstFloat>(1.0f));
+        ->arg_init(3, new ExprConstFloat(1.0f));
 
     // --- ImDrawList text ---
     addExtern<DAS_BIND_FUN(das::imgui_AddText), SimNode_ExtFuncCall, imguiTempFn>(
@@ -483,8 +483,8 @@ void das::Module_imgui::initMain()
     addExtern<DAS_BIND_FUN(das::imgui_AddText2), SimNode_ExtFuncCall, imguiTempFn>(
         *this, lib, "AddText", SideEffects::worstDefault, "das::imgui_AddText2")
         ->args({"drawList", "font", "font_size", "pos", "col", "text", "wrap_width", "cpu_fine_clip_rect"})
-        ->arg_init(6, make_smart<ExprConstFloat>(0.0f))
-        ->arg_init(7, make_smart<ExprConstPtr>());
+        ->arg_init(6, new ExprConstFloat(0.0f))
+        ->arg_init(7, new ExprConstPtr());
 
     // --- ImGuiTextBuffer ---
     addExtern<DAS_BIND_FUN(das::imgui_GTB_Append)>(*this, lib, "append", SideEffects::worstDefault,
@@ -516,8 +516,8 @@ void das::Module_imgui::initMain()
     addExtern<DAS_BIND_FUN(das::imgui_CalcTextSize)>(*this, lib, "CalcTextSize", SideEffects::worstDefault,
                                                      "das::imgui_CalcTextSize")
         ->args({"text", "hide_text_after_double_hash", "wrap_width"})
-        ->arg_init(1, make_smart<ExprConstBool>(false))
-        ->arg_init(2, make_smart<ExprConstFloat>(-1.0f));
+        ->arg_init(1, new ExprConstBool(false))
+        ->arg_init(2, new ExprConstFloat(-1.0f));
 
     // --- Combo ---
     addExtern<DAS_BIND_FUN(das::imgui_Combo)>(*this, lib, "_builtin_Combo", SideEffects::worstDefault,

@@ -3,111 +3,111 @@
 
 // --- Enum registrations ---
 
-addEnumeration(das::make_smart<Enumeration_ImGuiWindowFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiChildFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiItemFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiInputTextFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiTreeNodeFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiPopupFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiSelectableFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiComboFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiTabBarFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiTabItemFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiFocusedFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiHoveredFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiDockNodeFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiDragDropFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiDataType_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiDir>());
-addEnumeration(das::make_smart<Enumeration_ImGuiSortDirection>());
-addEnumeration(das::make_smart<Enumeration_ImGuiKey>());
-addEnumeration(das::make_smart<Enumeration_ImGuiInputFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiConfigFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiBackendFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiCol_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiStyleVar_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiButtonFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiColorEditFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiSliderFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiMouseButton_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiMouseCursor_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiMouseSource>());
-addEnumeration(das::make_smart<Enumeration_ImGuiCond_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiTableFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiTableColumnFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiTableRowFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiTableBgTarget_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiListClipperFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiMultiSelectFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiSelectionRequestType>());
-addEnumeration(das::make_smart<Enumeration_ImDrawFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImDrawListFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImTextureFormat>());
-addEnumeration(das::make_smart<Enumeration_ImTextureStatus>());
-addEnumeration(das::make_smart<Enumeration_ImFontAtlasFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImFontFlags_>());
-addEnumeration(das::make_smart<Enumeration_ImGuiViewportFlags_>());
+addEnumeration(new Enumeration_ImGuiWindowFlags_());
+addEnumeration(new Enumeration_ImGuiChildFlags_());
+addEnumeration(new Enumeration_ImGuiItemFlags_());
+addEnumeration(new Enumeration_ImGuiInputTextFlags_());
+addEnumeration(new Enumeration_ImGuiTreeNodeFlags_());
+addEnumeration(new Enumeration_ImGuiPopupFlags_());
+addEnumeration(new Enumeration_ImGuiSelectableFlags_());
+addEnumeration(new Enumeration_ImGuiComboFlags_());
+addEnumeration(new Enumeration_ImGuiTabBarFlags_());
+addEnumeration(new Enumeration_ImGuiTabItemFlags_());
+addEnumeration(new Enumeration_ImGuiFocusedFlags_());
+addEnumeration(new Enumeration_ImGuiHoveredFlags_());
+addEnumeration(new Enumeration_ImGuiDockNodeFlags_());
+addEnumeration(new Enumeration_ImGuiDragDropFlags_());
+addEnumeration(new Enumeration_ImGuiDataType_());
+addEnumeration(new Enumeration_ImGuiDir());
+addEnumeration(new Enumeration_ImGuiSortDirection());
+addEnumeration(new Enumeration_ImGuiKey());
+addEnumeration(new Enumeration_ImGuiInputFlags_());
+addEnumeration(new Enumeration_ImGuiConfigFlags_());
+addEnumeration(new Enumeration_ImGuiBackendFlags_());
+addEnumeration(new Enumeration_ImGuiCol_());
+addEnumeration(new Enumeration_ImGuiStyleVar_());
+addEnumeration(new Enumeration_ImGuiButtonFlags_());
+addEnumeration(new Enumeration_ImGuiColorEditFlags_());
+addEnumeration(new Enumeration_ImGuiSliderFlags_());
+addEnumeration(new Enumeration_ImGuiMouseButton_());
+addEnumeration(new Enumeration_ImGuiMouseCursor_());
+addEnumeration(new Enumeration_ImGuiMouseSource());
+addEnumeration(new Enumeration_ImGuiCond_());
+addEnumeration(new Enumeration_ImGuiTableFlags_());
+addEnumeration(new Enumeration_ImGuiTableColumnFlags_());
+addEnumeration(new Enumeration_ImGuiTableRowFlags_());
+addEnumeration(new Enumeration_ImGuiTableBgTarget_());
+addEnumeration(new Enumeration_ImGuiListClipperFlags_());
+addEnumeration(new Enumeration_ImGuiMultiSelectFlags_());
+addEnumeration(new Enumeration_ImGuiSelectionRequestType());
+addEnumeration(new Enumeration_ImDrawFlags_());
+addEnumeration(new Enumeration_ImDrawListFlags_());
+addEnumeration(new Enumeration_ImTextureFormat());
+addEnumeration(new Enumeration_ImTextureStatus());
+addEnumeration(new Enumeration_ImFontAtlasFlags_());
+addEnumeration(new Enumeration_ImFontFlags_());
+addEnumeration(new Enumeration_ImGuiViewportFlags_());
 
 // --- Opaque type registrations ---
 
-addAnnotation(das::make_smart<ImDrawListSharedDataAnnotation>());
-addAnnotation(das::make_smart<ImFontAtlasBuilderAnnotation>());
-addAnnotation(das::make_smart<ImFontLoaderAnnotation>());
-addAnnotation(das::make_smart<ImGuiContextAnnotation>());
+addAnnotation(new ImDrawListSharedDataAnnotation());
+addAnnotation(new ImFontAtlasBuilderAnnotation());
+addAnnotation(new ImFontLoaderAnnotation());
+addAnnotation(new ImGuiContextAnnotation());
 
 // --- Managed struct registrations ---
 
-addAnnotation(das::make_smart<ImGuiTextRangeAnnotation>(lib));
-addAnnotation(das::make_smart<ImTextureRefAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiTableColumnSortSpecsAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiTableSortSpecsAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiStyleAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiKeyDataAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiInputTextCallbackDataAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiSizeCallbackDataAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiWindowClassAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiPayloadAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiOnceUponAFrameAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiTextFilterAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiTextBufferAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiStorageAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiListClipperAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiMultiSelectIOAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiSelectionRequestAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiSelectionBasicStorageAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiSelectionExternalStorageAnnotation>(lib));
-addAnnotation(das::make_smart<ImDrawCmdAnnotation>(lib));
-addAnnotation(das::make_smart<ImDrawVertAnnotation>(lib));
-addAnnotation(das::make_smart<ImDrawCmdHeaderAnnotation>(lib));
-addAnnotation(das::make_smart<ImDrawChannelAnnotation>(lib));
-addAnnotation(das::make_smart<ImDrawListSplitterAnnotation>(lib));
-addAnnotation(das::make_smart<ImDrawListAnnotation>(lib));
-addAnnotation(das::make_smart<ImDrawDataAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiViewportAnnotation>(lib));
-addAnnotation(das::make_smart<ImTextureRectAnnotation>(lib));
-addAnnotation(das::make_smart<ImTextureDataAnnotation>(lib));
-addAnnotation(das::make_smart<ImFontGlyphAnnotation>(lib));
-addAnnotation(das::make_smart<ImFontGlyphRangesBuilderAnnotation>(lib));
-addAnnotation(das::make_smart<ImFontAtlasRectAnnotation>(lib));
-addAnnotation(das::make_smart<ImFontAtlasAnnotation>(lib));
-addAnnotation(das::make_smart<ImFontBakedAnnotation>(lib));
-addAnnotation(das::make_smart<ImFontAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiIOAnnotation>(lib));
-addAnnotation(das::make_smart<ImFontConfigAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiPlatformIOAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiPlatformMonitorAnnotation>(lib));
-addAnnotation(das::make_smart<ImGuiPlatformImeDataAnnotation>(lib));
+addAnnotation(new ImGuiTextRangeAnnotation(lib));
+addAnnotation(new ImTextureRefAnnotation(lib));
+addAnnotation(new ImGuiTableColumnSortSpecsAnnotation(lib));
+addAnnotation(new ImGuiTableSortSpecsAnnotation(lib));
+addAnnotation(new ImGuiStyleAnnotation(lib));
+addAnnotation(new ImGuiKeyDataAnnotation(lib));
+addAnnotation(new ImGuiInputTextCallbackDataAnnotation(lib));
+addAnnotation(new ImGuiSizeCallbackDataAnnotation(lib));
+addAnnotation(new ImGuiWindowClassAnnotation(lib));
+addAnnotation(new ImGuiPayloadAnnotation(lib));
+addAnnotation(new ImGuiOnceUponAFrameAnnotation(lib));
+addAnnotation(new ImGuiTextFilterAnnotation(lib));
+addAnnotation(new ImGuiTextBufferAnnotation(lib));
+addAnnotation(new ImGuiStorageAnnotation(lib));
+addAnnotation(new ImGuiListClipperAnnotation(lib));
+addAnnotation(new ImGuiMultiSelectIOAnnotation(lib));
+addAnnotation(new ImGuiSelectionRequestAnnotation(lib));
+addAnnotation(new ImGuiSelectionBasicStorageAnnotation(lib));
+addAnnotation(new ImGuiSelectionExternalStorageAnnotation(lib));
+addAnnotation(new ImDrawCmdAnnotation(lib));
+addAnnotation(new ImDrawVertAnnotation(lib));
+addAnnotation(new ImDrawCmdHeaderAnnotation(lib));
+addAnnotation(new ImDrawChannelAnnotation(lib));
+addAnnotation(new ImDrawListSplitterAnnotation(lib));
+addAnnotation(new ImDrawListAnnotation(lib));
+addAnnotation(new ImDrawDataAnnotation(lib));
+addAnnotation(new ImGuiViewportAnnotation(lib));
+addAnnotation(new ImTextureRectAnnotation(lib));
+addAnnotation(new ImTextureDataAnnotation(lib));
+addAnnotation(new ImFontGlyphAnnotation(lib));
+addAnnotation(new ImFontGlyphRangesBuilderAnnotation(lib));
+addAnnotation(new ImFontAtlasRectAnnotation(lib));
+addAnnotation(new ImFontAtlasAnnotation(lib));
+addAnnotation(new ImFontBakedAnnotation(lib));
+addAnnotation(new ImFontAnnotation(lib));
+addAnnotation(new ImGuiIOAnnotation(lib));
+addAnnotation(new ImFontConfigAnnotation(lib));
+addAnnotation(new ImGuiPlatformIOAnnotation(lib));
+addAnnotation(new ImGuiPlatformMonitorAnnotation(lib));
+addAnnotation(new ImGuiPlatformImeDataAnnotation(lib));
 
 // --- Function registrations ---
 
 das::makeExtern<ImGuiContext*(*)(ImFontAtlas *), ImGui::CreateContext, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "CreateContext", "ImGui::CreateContext")
     ->args({"shared_font_atlas"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImGuiContext *), ImGui::DestroyContext, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DestroyContext", "ImGui::DestroyContext")
     ->args({"ctx"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<ImGuiContext*(*)(void), ImGui::GetCurrentContext, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "GetCurrentContext", "ImGui::GetCurrentContext")
@@ -140,32 +140,32 @@ das::makeExtern<ImDrawData*(*)(void), ImGui::GetDrawData, das::SimNode_ExtFuncCa
 
 das::makeExtern<void(*)(bool *), ImGui::ShowDemoWindow, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ShowDemoWindow", "ImGui::ShowDemoWindow")
     ->args({"p_open"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(bool *), ImGui::ShowMetricsWindow, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ShowMetricsWindow", "ImGui::ShowMetricsWindow")
     ->args({"p_open"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(bool *), ImGui::ShowDebugLogWindow, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ShowDebugLogWindow", "ImGui::ShowDebugLogWindow")
     ->args({"p_open"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(bool *), ImGui::ShowIDStackToolWindow, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ShowIDStackToolWindow", "ImGui::ShowIDStackToolWindow")
     ->args({"p_open"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(bool *), ImGui::ShowAboutWindow, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ShowAboutWindow", "ImGui::ShowAboutWindow")
     ->args({"p_open"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImGuiStyle *), ImGui::ShowStyleEditor, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ShowStyleEditor", "ImGui::ShowStyleEditor")
     ->args({"ref"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *), ImGui::ShowStyleSelector, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ShowStyleSelector", "ImGui::ShowStyleSelector")
@@ -184,23 +184,23 @@ das::makeExtern<const char*(*)(void), ImGui::GetVersion, das::SimNode_ExtFuncCal
 
 das::makeExtern<void(*)(ImGuiStyle *), ImGui::StyleColorsDark, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "StyleColorsDark", "ImGui::StyleColorsDark")
     ->args({"dst"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImGuiStyle *), ImGui::StyleColorsLight, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "StyleColorsLight", "ImGui::StyleColorsLight")
     ->args({"dst"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImGuiStyle *), ImGui::StyleColorsClassic, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "StyleColorsClassic", "ImGui::StyleColorsClassic")
     ->args({"dst"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, bool *, ImGuiWindowFlags), ImGui::Begin, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Begin", "ImGui::Begin")
     ->args({"name", "p_open", "flags"})
-    ->arg_init(1, make_smart<ExprConstPtr>())
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstPtr())
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::End, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "End", "ImGui::End")
@@ -208,16 +208,16 @@ das::makeExtern<void(*)(void), ImGui::End, das::SimNode_ExtFuncCall, imguiTempFn
 
 das::makeExtern<bool(*)(const char *, const ImVec2 &, ImGuiChildFlags, ImGuiWindowFlags), ImGui::BeginChild, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginChild", "ImGui::BeginChild")
     ->args({"str_id", "size", "child_flags", "window_flags"})
-    ->arg_init(1, make_smart<ExprCall>(LineInfo(), "ImVec2"))
-    ->arg_init(2, make_smart<ExprConstInt>(0))
-    ->arg_init(3, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprCall(LineInfo(), "ImVec2"))
+    ->arg_init(2, new ExprConstInt(0))
+    ->arg_init(3, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(ImGuiID, const ImVec2 &, ImGuiChildFlags, ImGuiWindowFlags), ImGui::BeginChild, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginChild2", "ImGui::BeginChild")
     ->args({"id", "size", "child_flags", "window_flags"})
-    ->arg_init(1, make_smart<ExprCall>(LineInfo(), "ImVec2"))
-    ->arg_init(2, make_smart<ExprConstInt>(0))
-    ->arg_init(3, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprCall(LineInfo(), "ImVec2"))
+    ->arg_init(2, new ExprConstInt(0))
+    ->arg_init(3, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::EndChild, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "EndChild", "ImGui::EndChild")
@@ -231,12 +231,12 @@ das::makeExtern<bool(*)(void), ImGui::IsWindowCollapsed, das::SimNode_ExtFuncCal
 
 das::makeExtern<bool(*)(ImGuiFocusedFlags), ImGui::IsWindowFocused, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsWindowFocused", "ImGui::IsWindowFocused")
     ->args({"flags"})
-    ->arg_init(0, make_smart<ExprConstInt>(0))
+    ->arg_init(0, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(ImGuiHoveredFlags), ImGui::IsWindowHovered, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsWindowHovered", "ImGui::IsWindowHovered")
     ->args({"flags"})
-    ->arg_init(0, make_smart<ExprConstInt>(0))
+    ->arg_init(0, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<ImDrawList*(*)(void), ImGui::GetWindowDrawList, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "GetWindowDrawList", "ImGui::GetWindowDrawList")
@@ -262,13 +262,13 @@ das::makeExtern<ImGuiViewport*(*)(void), ImGui::GetWindowViewport, das::SimNode_
 
 das::makeExtern<void(*)(const ImVec2 &, ImGuiCond, const ImVec2 &), ImGui::SetNextWindowPos, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetNextWindowPos", "ImGui::SetNextWindowPos")
     ->args({"pos", "cond", "pivot"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
-    ->arg_init(2, make_smart<ExprCall>(LineInfo(), "ImVec2"))
+    ->arg_init(1, new ExprConstInt(0))
+    ->arg_init(2, new ExprCall(LineInfo(), "ImVec2"))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const ImVec2 &, ImGuiCond), ImGui::SetNextWindowSize, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetNextWindowSize", "ImGui::SetNextWindowSize")
     ->args({"size", "cond"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const ImVec2 &), ImGui::SetNextWindowContentSize, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetNextWindowContentSize", "ImGui::SetNextWindowContentSize")
@@ -277,7 +277,7 @@ das::makeExtern<void(*)(const ImVec2 &), ImGui::SetNextWindowContentSize, das::S
 
 das::makeExtern<void(*)(bool, ImGuiCond), ImGui::SetNextWindowCollapsed, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetNextWindowCollapsed", "ImGui::SetNextWindowCollapsed")
     ->args({"collapsed", "cond"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::SetNextWindowFocus, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetNextWindowFocus", "ImGui::SetNextWindowFocus")
@@ -297,17 +297,17 @@ das::makeExtern<void(*)(ImGuiID), ImGui::SetNextWindowViewport, das::SimNode_Ext
 
 das::makeExtern<void(*)(const ImVec2 &, ImGuiCond), ImGui::SetWindowPos, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetWindowPos", "ImGui::SetWindowPos")
     ->args({"pos", "cond"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const ImVec2 &, ImGuiCond), ImGui::SetWindowSize, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetWindowSize", "ImGui::SetWindowSize")
     ->args({"size", "cond"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(bool, ImGuiCond), ImGui::SetWindowCollapsed, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetWindowCollapsed", "ImGui::SetWindowCollapsed")
     ->args({"collapsed", "cond"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::SetWindowFocus, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetWindowFocus", "ImGui::SetWindowFocus")
@@ -315,17 +315,17 @@ das::makeExtern<void(*)(void), ImGui::SetWindowFocus, das::SimNode_ExtFuncCall, 
 
 das::makeExtern<void(*)(const char *, const ImVec2 &, ImGuiCond), ImGui::SetWindowPos, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetWindowPos2", "ImGui::SetWindowPos")
     ->args({"name", "pos", "cond"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const char *, const ImVec2 &, ImGuiCond), ImGui::SetWindowSize, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetWindowSize2", "ImGui::SetWindowSize")
     ->args({"name", "size", "cond"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const char *, bool, ImGuiCond), ImGui::SetWindowCollapsed, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetWindowCollapsed2", "ImGui::SetWindowCollapsed")
     ->args({"name", "collapsed", "cond"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const char *), ImGui::SetWindowFocus, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetWindowFocus2", "ImGui::SetWindowFocus")
@@ -354,22 +354,22 @@ das::makeExtern<float(*)(void), ImGui::GetScrollMaxY, das::SimNode_ExtFuncCall, 
 
 das::makeExtern<void(*)(float), ImGui::SetScrollHereX, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetScrollHereX", "ImGui::SetScrollHereX")
     ->args({"center_x_ratio"})
-    ->arg_init(0, make_smart<ExprConstFloat>(0.5f))
+    ->arg_init(0, new ExprConstFloat(0.5f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(float), ImGui::SetScrollHereY, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetScrollHereY", "ImGui::SetScrollHereY")
     ->args({"center_y_ratio"})
-    ->arg_init(0, make_smart<ExprConstFloat>(0.5f))
+    ->arg_init(0, new ExprConstFloat(0.5f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(float, float), ImGui::SetScrollFromPosX, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetScrollFromPosX", "ImGui::SetScrollFromPosX")
     ->args({"local_x", "center_x_ratio"})
-    ->arg_init(1, make_smart<ExprConstFloat>(0.5f))
+    ->arg_init(1, new ExprConstFloat(0.5f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(float, float), ImGui::SetScrollFromPosY, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetScrollFromPosY", "ImGui::SetScrollFromPosY")
     ->args({"local_y", "center_y_ratio"})
-    ->arg_init(1, make_smart<ExprConstFloat>(0.5f))
+    ->arg_init(1, new ExprConstFloat(0.5f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImFont *, float), ImGui::PushFont, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "PushFont", "ImGui::PushFont")
@@ -398,7 +398,7 @@ das::makeExtern<void(*)(ImGuiCol, const ImVec4 &), ImGui::PushStyleColor, das::S
 
 das::makeExtern<void(*)(int), ImGui::PopStyleColor, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "PopStyleColor", "ImGui::PopStyleColor")
     ->args({"count"})
-    ->arg_init(0, make_smart<ExprConstInt>(1))
+    ->arg_init(0, new ExprConstInt(1))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImGuiStyleVar, float), ImGui::PushStyleVar, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "PushStyleVar", "ImGui::PushStyleVar")
@@ -419,7 +419,7 @@ das::makeExtern<void(*)(ImGuiStyleVar, float), ImGui::PushStyleVarY, das::SimNod
 
 das::makeExtern<void(*)(int), ImGui::PopStyleVar, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "PopStyleVar", "ImGui::PopStyleVar")
     ->args({"count"})
-    ->arg_init(0, make_smart<ExprConstInt>(1))
+    ->arg_init(0, new ExprConstInt(1))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImGuiItemFlags, bool), ImGui::PushItemFlag, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "PushItemFlag", "ImGui::PushItemFlag")
@@ -445,7 +445,7 @@ das::makeExtern<float(*)(void), ImGui::CalcItemWidth, das::SimNode_ExtFuncCall, 
 
 das::makeExtern<void(*)(float), ImGui::PushTextWrapPos, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "PushTextWrapPos", "ImGui::PushTextWrapPos")
     ->args({"wrap_local_pos_x"})
-    ->arg_init(0, make_smart<ExprConstFloat>(0.0f))
+    ->arg_init(0, new ExprConstFloat(0.0f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::PopTextWrapPos, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "PopTextWrapPos", "ImGui::PopTextWrapPos")
@@ -456,7 +456,7 @@ das::makeExtern<ImVec2(*)(void), ImGui::GetFontTexUvWhitePixel, das::SimNode_Ext
 
 das::makeExtern<ImU32(*)(ImGuiCol, float), ImGui::GetColorU32, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "GetColorU32", "ImGui::GetColorU32")
     ->args({"idx", "alpha_mul"})
-    ->arg_init(1, make_smart<ExprConstFloat>(1.0f))
+    ->arg_init(1, new ExprConstFloat(1.0f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<ImU32(*)(const ImVec4 &), ImGui::GetColorU32, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "GetColorU322", "ImGui::GetColorU32")
@@ -465,7 +465,7 @@ das::makeExtern<ImU32(*)(const ImVec4 &), ImGui::GetColorU32, das::SimNode_ExtFu
 
 das::makeExtern<ImU32(*)(ImU32, float), ImGui::GetColorU32, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "GetColorU323", "ImGui::GetColorU32")
     ->args({"col", "alpha_mul"})
-    ->arg_init(1, make_smart<ExprConstFloat>(1.0f))
+    ->arg_init(1, new ExprConstFloat(1.0f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<const ImVec4&(*)(ImGuiCol), ImGui::GetStyleColorVec4, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "GetStyleColorVec4", "ImGui::GetStyleColorVec4")
@@ -511,8 +511,8 @@ das::makeExtern<void(*)(void), ImGui::Separator, das::SimNode_ExtFuncCall, imgui
 
 das::makeExtern<void(*)(float, float), ImGui::SameLine, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SameLine", "ImGui::SameLine")
     ->args({"offset_from_start_x", "spacing"})
-    ->arg_init(0, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(1, make_smart<ExprConstFloat>(-1.0f))
+    ->arg_init(0, new ExprConstFloat(0.0f))
+    ->arg_init(1, new ExprConstFloat(-1.0f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::NewLine, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "NewLine", "ImGui::NewLine")
@@ -527,12 +527,12 @@ das::makeExtern<void(*)(const ImVec2 &), ImGui::Dummy, das::SimNode_ExtFuncCall,
 
 das::makeExtern<void(*)(float), ImGui::Indent, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Indent", "ImGui::Indent")
     ->args({"indent_w"})
-    ->arg_init(0, make_smart<ExprConstFloat>(0.0f))
+    ->arg_init(0, new ExprConstFloat(0.0f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(float), ImGui::Unindent, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Unindent", "ImGui::Unindent")
     ->args({"indent_w"})
-    ->arg_init(0, make_smart<ExprConstFloat>(0.0f))
+    ->arg_init(0, new ExprConstFloat(0.0f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::BeginGroup, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginGroup", "ImGui::BeginGroup")
@@ -597,7 +597,7 @@ das::makeExtern<void(*)(const char *), ImGui::SeparatorText, das::SimNode_ExtFun
 
 das::makeExtern<bool(*)(const char *, const ImVec2 &), ImGui::Button, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Button", "ImGui::Button")
     ->args({"label", "size"})
-    ->arg_init(1, make_smart<ExprCall>(LineInfo(), "ImVec2"))
+    ->arg_init(1, new ExprCall(LineInfo(), "ImVec2"))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *), ImGui::SmallButton, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SmallButton", "ImGui::SmallButton")
@@ -606,7 +606,7 @@ das::makeExtern<bool(*)(const char *), ImGui::SmallButton, das::SimNode_ExtFuncC
 
 das::makeExtern<bool(*)(const char *, const ImVec2 &, ImGuiButtonFlags), ImGui::InvisibleButton, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "InvisibleButton", "ImGui::InvisibleButton")
     ->args({"str_id", "size", "flags"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, ImGuiDir), ImGui::ArrowButton, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ArrowButton", "ImGui::ArrowButton")
@@ -635,8 +635,8 @@ das::makeExtern<bool(*)(const char *, int *, int), ImGui::RadioButton, das::SimN
 
 das::makeExtern<void(*)(float, const ImVec2 &, const char *), ImGui::ProgressBar, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ProgressBar", "ImGui::ProgressBar")
     ->args({"fraction", "size_arg", "overlay"})
-    ->arg_init(1, make_smart<ExprCall>(LineInfo(), "ImVec2"))
-    ->arg_init(2, make_smart<ExprConstPtr>())
+    ->arg_init(1, new ExprCall(LineInfo(), "ImVec2"))
+    ->arg_init(2, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::Bullet, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Bullet", "ImGui::Bullet")
@@ -648,34 +648,34 @@ das::makeExtern<bool(*)(const char *), ImGui::TextLink, das::SimNode_ExtFuncCall
 
 das::makeExtern<bool(*)(const char *, const char *), ImGui::TextLinkOpenURL, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "TextLinkOpenURL", "ImGui::TextLinkOpenURL")
     ->args({"label", "url"})
-    ->arg_init(1, make_smart<ExprConstPtr>())
+    ->arg_init(1, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImTextureRef, const ImVec2 &, const ImVec2 &, const ImVec2 &), ImGui::Image, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Image", "ImGui::Image")
     ->args({"tex_ref", "image_size", "uv0", "uv1"})
-    ->arg_init(2, make_smart<ExprCall>(LineInfo(), "ImVec2"))
-    ->arg_init(3, make_smart<ExprCall>(LineInfo(), "ImVec2"))
+    ->arg_init(2, new ExprCall(LineInfo(), "ImVec2"))
+    ->arg_init(3, new ExprCall(LineInfo(), "ImVec2"))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImTextureRef, const ImVec2 &, const ImVec2 &, const ImVec2 &, const ImVec4 &, const ImVec4 &), ImGui::ImageWithBg, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ImageWithBg", "ImGui::ImageWithBg")
     ->args({"tex_ref", "image_size", "uv0", "uv1", "bg_col", "tint_col"})
-    ->arg_init(2, make_smart<ExprCall>(LineInfo(), "ImVec2"))
-    ->arg_init(3, make_smart<ExprCall>(LineInfo(), "ImVec2"))
-    ->arg_init(4, make_smart<ExprCall>(LineInfo(), "ImVec4"))
-    ->arg_init(5, make_smart<ExprCall>(LineInfo(), "ImVec4"))
+    ->arg_init(2, new ExprCall(LineInfo(), "ImVec2"))
+    ->arg_init(3, new ExprCall(LineInfo(), "ImVec2"))
+    ->arg_init(4, new ExprCall(LineInfo(), "ImVec4"))
+    ->arg_init(5, new ExprCall(LineInfo(), "ImVec4"))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, ImTextureRef, const ImVec2 &, const ImVec2 &, const ImVec2 &, const ImVec4 &, const ImVec4 &), ImGui::ImageButton, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ImageButton", "ImGui::ImageButton")
     ->args({"str_id", "tex_ref", "image_size", "uv0", "uv1", "bg_col", "tint_col"})
-    ->arg_init(3, make_smart<ExprCall>(LineInfo(), "ImVec2"))
-    ->arg_init(4, make_smart<ExprCall>(LineInfo(), "ImVec2"))
-    ->arg_init(5, make_smart<ExprCall>(LineInfo(), "ImVec4"))
-    ->arg_init(6, make_smart<ExprCall>(LineInfo(), "ImVec4"))
+    ->arg_init(3, new ExprCall(LineInfo(), "ImVec2"))
+    ->arg_init(4, new ExprCall(LineInfo(), "ImVec2"))
+    ->arg_init(5, new ExprCall(LineInfo(), "ImVec4"))
+    ->arg_init(6, new ExprCall(LineInfo(), "ImVec4"))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, const char *, ImGuiComboFlags), ImGui::BeginCombo, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginCombo", "ImGui::BeginCombo")
     ->args({"label", "preview_value", "flags"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::EndCombo, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "EndCombo", "ImGui::EndCombo")
@@ -683,278 +683,278 @@ das::makeExtern<void(*)(void), ImGui::EndCombo, das::SimNode_ExtFuncCall, imguiT
 
 das::makeExtern<bool(*)(const char *, int *, const char * const *, int, int), ImGui::Combo, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Combo", "ImGui::Combo")
     ->args({"label", "current_item", "items", "items_count", "popup_max_height_in_items"})
-    ->arg_init(4, make_smart<ExprConstInt>(-1))
+    ->arg_init(4, new ExprConstInt(-1))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, const char *, int), ImGui::Combo, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Combo2", "ImGui::Combo")
     ->args({"label", "current_item", "items_separated_by_zeros", "popup_max_height_in_items"})
-    ->arg_init(3, make_smart<ExprConstInt>(-1))
+    ->arg_init(3, new ExprConstInt(-1))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, float, float, float, const char *, ImGuiSliderFlags), ImGui::DragFloat, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DragFloat", "ImGui::DragFloat")
     ->args({"label", "v", "v_speed", "v_min", "v_max", "format", "flags"})
-    ->arg_init(2, make_smart<ExprConstFloat>(1.0f))
-    ->arg_init(3, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(4, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(6, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstFloat(1.0f))
+    ->arg_init(3, new ExprConstFloat(0.0f))
+    ->arg_init(4, new ExprConstFloat(0.0f))
+    ->arg_init(6, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, float, float, float, const char *, ImGuiSliderFlags), ImGui::DragFloat2, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DragFloat2", "ImGui::DragFloat2")
     ->args({"label", "v", "v_speed", "v_min", "v_max", "format", "flags"})
-    ->arg_init(2, make_smart<ExprConstFloat>(1.0f))
-    ->arg_init(3, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(4, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(6, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstFloat(1.0f))
+    ->arg_init(3, new ExprConstFloat(0.0f))
+    ->arg_init(4, new ExprConstFloat(0.0f))
+    ->arg_init(6, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, float, float, float, const char *, ImGuiSliderFlags), ImGui::DragFloat3, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DragFloat3", "ImGui::DragFloat3")
     ->args({"label", "v", "v_speed", "v_min", "v_max", "format", "flags"})
-    ->arg_init(2, make_smart<ExprConstFloat>(1.0f))
-    ->arg_init(3, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(4, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(6, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstFloat(1.0f))
+    ->arg_init(3, new ExprConstFloat(0.0f))
+    ->arg_init(4, new ExprConstFloat(0.0f))
+    ->arg_init(6, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, float, float, float, const char *, ImGuiSliderFlags), ImGui::DragFloat4, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DragFloat4", "ImGui::DragFloat4")
     ->args({"label", "v", "v_speed", "v_min", "v_max", "format", "flags"})
-    ->arg_init(2, make_smart<ExprConstFloat>(1.0f))
-    ->arg_init(3, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(4, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(6, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstFloat(1.0f))
+    ->arg_init(3, new ExprConstFloat(0.0f))
+    ->arg_init(4, new ExprConstFloat(0.0f))
+    ->arg_init(6, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, float *, float, float, float, const char *, const char *, ImGuiSliderFlags), ImGui::DragFloatRange2, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DragFloatRange2", "ImGui::DragFloatRange2")
     ->args({"label", "v_current_min", "v_current_max", "v_speed", "v_min", "v_max", "format", "format_max", "flags"})
-    ->arg_init(3, make_smart<ExprConstFloat>(1.0f))
-    ->arg_init(4, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(5, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(7, make_smart<ExprConstPtr>())
-    ->arg_init(8, make_smart<ExprConstInt>(0))
+    ->arg_init(3, new ExprConstFloat(1.0f))
+    ->arg_init(4, new ExprConstFloat(0.0f))
+    ->arg_init(5, new ExprConstFloat(0.0f))
+    ->arg_init(7, new ExprConstPtr())
+    ->arg_init(8, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, float, int, int, const char *, ImGuiSliderFlags), ImGui::DragInt, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DragInt", "ImGui::DragInt")
     ->args({"label", "v", "v_speed", "v_min", "v_max", "format", "flags"})
-    ->arg_init(2, make_smart<ExprConstFloat>(1.0f))
-    ->arg_init(3, make_smart<ExprConstInt>(0))
-    ->arg_init(4, make_smart<ExprConstInt>(0))
-    ->arg_init(6, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstFloat(1.0f))
+    ->arg_init(3, new ExprConstInt(0))
+    ->arg_init(4, new ExprConstInt(0))
+    ->arg_init(6, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, float, int, int, const char *, ImGuiSliderFlags), ImGui::DragInt2, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DragInt2", "ImGui::DragInt2")
     ->args({"label", "v", "v_speed", "v_min", "v_max", "format", "flags"})
-    ->arg_init(2, make_smart<ExprConstFloat>(1.0f))
-    ->arg_init(3, make_smart<ExprConstInt>(0))
-    ->arg_init(4, make_smart<ExprConstInt>(0))
-    ->arg_init(6, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstFloat(1.0f))
+    ->arg_init(3, new ExprConstInt(0))
+    ->arg_init(4, new ExprConstInt(0))
+    ->arg_init(6, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, float, int, int, const char *, ImGuiSliderFlags), ImGui::DragInt3, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DragInt3", "ImGui::DragInt3")
     ->args({"label", "v", "v_speed", "v_min", "v_max", "format", "flags"})
-    ->arg_init(2, make_smart<ExprConstFloat>(1.0f))
-    ->arg_init(3, make_smart<ExprConstInt>(0))
-    ->arg_init(4, make_smart<ExprConstInt>(0))
-    ->arg_init(6, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstFloat(1.0f))
+    ->arg_init(3, new ExprConstInt(0))
+    ->arg_init(4, new ExprConstInt(0))
+    ->arg_init(6, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, float, int, int, const char *, ImGuiSliderFlags), ImGui::DragInt4, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DragInt4", "ImGui::DragInt4")
     ->args({"label", "v", "v_speed", "v_min", "v_max", "format", "flags"})
-    ->arg_init(2, make_smart<ExprConstFloat>(1.0f))
-    ->arg_init(3, make_smart<ExprConstInt>(0))
-    ->arg_init(4, make_smart<ExprConstInt>(0))
-    ->arg_init(6, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstFloat(1.0f))
+    ->arg_init(3, new ExprConstInt(0))
+    ->arg_init(4, new ExprConstInt(0))
+    ->arg_init(6, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, int *, float, int, int, const char *, const char *, ImGuiSliderFlags), ImGui::DragIntRange2, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DragIntRange2", "ImGui::DragIntRange2")
     ->args({"label", "v_current_min", "v_current_max", "v_speed", "v_min", "v_max", "format", "format_max", "flags"})
-    ->arg_init(3, make_smart<ExprConstFloat>(1.0f))
-    ->arg_init(4, make_smart<ExprConstInt>(0))
-    ->arg_init(5, make_smart<ExprConstInt>(0))
-    ->arg_init(7, make_smart<ExprConstPtr>())
-    ->arg_init(8, make_smart<ExprConstInt>(0))
+    ->arg_init(3, new ExprConstFloat(1.0f))
+    ->arg_init(4, new ExprConstInt(0))
+    ->arg_init(5, new ExprConstInt(0))
+    ->arg_init(7, new ExprConstPtr())
+    ->arg_init(8, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, ImGuiDataType, void *, float, const void *, const void *, const char *, ImGuiSliderFlags), ImGui::DragScalar, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DragScalar", "ImGui::DragScalar")
     ->args({"label", "data_type", "p_data", "v_speed", "p_min", "p_max", "format", "flags"})
-    ->arg_init(3, make_smart<ExprConstFloat>(1.0f))
-    ->arg_init(4, make_smart<ExprConstPtr>())
-    ->arg_init(5, make_smart<ExprConstPtr>())
-    ->arg_init(6, make_smart<ExprConstPtr>())
-    ->arg_init(7, make_smart<ExprConstInt>(0))
+    ->arg_init(3, new ExprConstFloat(1.0f))
+    ->arg_init(4, new ExprConstPtr())
+    ->arg_init(5, new ExprConstPtr())
+    ->arg_init(6, new ExprConstPtr())
+    ->arg_init(7, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, ImGuiDataType, void *, int, float, const void *, const void *, const char *, ImGuiSliderFlags), ImGui::DragScalarN, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DragScalarN", "ImGui::DragScalarN")
     ->args({"label", "data_type", "p_data", "components", "v_speed", "p_min", "p_max", "format", "flags"})
-    ->arg_init(4, make_smart<ExprConstFloat>(1.0f))
-    ->arg_init(5, make_smart<ExprConstPtr>())
-    ->arg_init(6, make_smart<ExprConstPtr>())
-    ->arg_init(7, make_smart<ExprConstPtr>())
-    ->arg_init(8, make_smart<ExprConstInt>(0))
+    ->arg_init(4, new ExprConstFloat(1.0f))
+    ->arg_init(5, new ExprConstPtr())
+    ->arg_init(6, new ExprConstPtr())
+    ->arg_init(7, new ExprConstPtr())
+    ->arg_init(8, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, float, float, const char *, ImGuiSliderFlags), ImGui::SliderFloat, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SliderFloat", "ImGui::SliderFloat")
     ->args({"label", "v", "v_min", "v_max", "format", "flags"})
-    ->arg_init(5, make_smart<ExprConstInt>(0))
+    ->arg_init(5, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, float, float, const char *, ImGuiSliderFlags), ImGui::SliderFloat2, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SliderFloat2", "ImGui::SliderFloat2")
     ->args({"label", "v", "v_min", "v_max", "format", "flags"})
-    ->arg_init(5, make_smart<ExprConstInt>(0))
+    ->arg_init(5, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, float, float, const char *, ImGuiSliderFlags), ImGui::SliderFloat3, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SliderFloat3", "ImGui::SliderFloat3")
     ->args({"label", "v", "v_min", "v_max", "format", "flags"})
-    ->arg_init(5, make_smart<ExprConstInt>(0))
+    ->arg_init(5, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, float, float, const char *, ImGuiSliderFlags), ImGui::SliderFloat4, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SliderFloat4", "ImGui::SliderFloat4")
     ->args({"label", "v", "v_min", "v_max", "format", "flags"})
-    ->arg_init(5, make_smart<ExprConstInt>(0))
+    ->arg_init(5, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, float, float, const char *, ImGuiSliderFlags), ImGui::SliderAngle, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SliderAngle", "ImGui::SliderAngle")
     ->args({"label", "v_rad", "v_degrees_min", "v_degrees_max", "format", "flags"})
-    ->arg_init(2, make_smart<ExprConstFloat>(-360.0f))
-    ->arg_init(5, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstFloat(-360.0f))
+    ->arg_init(5, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, int, int, const char *, ImGuiSliderFlags), ImGui::SliderInt, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SliderInt", "ImGui::SliderInt")
     ->args({"label", "v", "v_min", "v_max", "format", "flags"})
-    ->arg_init(5, make_smart<ExprConstInt>(0))
+    ->arg_init(5, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, int, int, const char *, ImGuiSliderFlags), ImGui::SliderInt2, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SliderInt2", "ImGui::SliderInt2")
     ->args({"label", "v", "v_min", "v_max", "format", "flags"})
-    ->arg_init(5, make_smart<ExprConstInt>(0))
+    ->arg_init(5, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, int, int, const char *, ImGuiSliderFlags), ImGui::SliderInt3, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SliderInt3", "ImGui::SliderInt3")
     ->args({"label", "v", "v_min", "v_max", "format", "flags"})
-    ->arg_init(5, make_smart<ExprConstInt>(0))
+    ->arg_init(5, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, int, int, const char *, ImGuiSliderFlags), ImGui::SliderInt4, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SliderInt4", "ImGui::SliderInt4")
     ->args({"label", "v", "v_min", "v_max", "format", "flags"})
-    ->arg_init(5, make_smart<ExprConstInt>(0))
+    ->arg_init(5, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, ImGuiDataType, void *, const void *, const void *, const char *, ImGuiSliderFlags), ImGui::SliderScalar, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SliderScalar", "ImGui::SliderScalar")
     ->args({"label", "data_type", "p_data", "p_min", "p_max", "format", "flags"})
-    ->arg_init(5, make_smart<ExprConstPtr>())
-    ->arg_init(6, make_smart<ExprConstInt>(0))
+    ->arg_init(5, new ExprConstPtr())
+    ->arg_init(6, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, ImGuiDataType, void *, int, const void *, const void *, const char *, ImGuiSliderFlags), ImGui::SliderScalarN, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SliderScalarN", "ImGui::SliderScalarN")
     ->args({"label", "data_type", "p_data", "components", "p_min", "p_max", "format", "flags"})
-    ->arg_init(6, make_smart<ExprConstPtr>())
-    ->arg_init(7, make_smart<ExprConstInt>(0))
+    ->arg_init(6, new ExprConstPtr())
+    ->arg_init(7, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, const ImVec2 &, float *, float, float, const char *, ImGuiSliderFlags), ImGui::VSliderFloat, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "VSliderFloat", "ImGui::VSliderFloat")
     ->args({"label", "size", "v", "v_min", "v_max", "format", "flags"})
-    ->arg_init(6, make_smart<ExprConstInt>(0))
+    ->arg_init(6, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, const ImVec2 &, int *, int, int, const char *, ImGuiSliderFlags), ImGui::VSliderInt, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "VSliderInt", "ImGui::VSliderInt")
     ->args({"label", "size", "v", "v_min", "v_max", "format", "flags"})
-    ->arg_init(6, make_smart<ExprConstInt>(0))
+    ->arg_init(6, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, const ImVec2 &, ImGuiDataType, void *, const void *, const void *, const char *, ImGuiSliderFlags), ImGui::VSliderScalar, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "VSliderScalar", "ImGui::VSliderScalar")
     ->args({"label", "size", "data_type", "p_data", "p_min", "p_max", "format", "flags"})
-    ->arg_init(6, make_smart<ExprConstPtr>())
-    ->arg_init(7, make_smart<ExprConstInt>(0))
+    ->arg_init(6, new ExprConstPtr())
+    ->arg_init(7, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, float, float, const char *, ImGuiInputTextFlags), ImGui::InputFloat, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "InputFloat", "ImGui::InputFloat")
     ->args({"label", "v", "step", "step_fast", "format", "flags"})
-    ->arg_init(2, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(3, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(5, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstFloat(0.0f))
+    ->arg_init(3, new ExprConstFloat(0.0f))
+    ->arg_init(5, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, const char *, ImGuiInputTextFlags), ImGui::InputFloat2, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "InputFloat2", "ImGui::InputFloat2")
     ->args({"label", "v", "format", "flags"})
-    ->arg_init(3, make_smart<ExprConstInt>(0))
+    ->arg_init(3, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, const char *, ImGuiInputTextFlags), ImGui::InputFloat3, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "InputFloat3", "ImGui::InputFloat3")
     ->args({"label", "v", "format", "flags"})
-    ->arg_init(3, make_smart<ExprConstInt>(0))
+    ->arg_init(3, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, const char *, ImGuiInputTextFlags), ImGui::InputFloat4, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "InputFloat4", "ImGui::InputFloat4")
     ->args({"label", "v", "format", "flags"})
-    ->arg_init(3, make_smart<ExprConstInt>(0))
+    ->arg_init(3, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, int, int, ImGuiInputTextFlags), ImGui::InputInt, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "InputInt", "ImGui::InputInt")
     ->args({"label", "v", "step", "step_fast", "flags"})
-    ->arg_init(2, make_smart<ExprConstInt>(1))
-    ->arg_init(3, make_smart<ExprConstInt>(100))
-    ->arg_init(4, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstInt(1))
+    ->arg_init(3, new ExprConstInt(100))
+    ->arg_init(4, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, ImGuiInputTextFlags), ImGui::InputInt2, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "InputInt2", "ImGui::InputInt2")
     ->args({"label", "v", "flags"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, ImGuiInputTextFlags), ImGui::InputInt3, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "InputInt3", "ImGui::InputInt3")
     ->args({"label", "v", "flags"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int *, ImGuiInputTextFlags), ImGui::InputInt4, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "InputInt4", "ImGui::InputInt4")
     ->args({"label", "v", "flags"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, double *, double, double, const char *, ImGuiInputTextFlags), ImGui::InputDouble, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "InputDouble", "ImGui::InputDouble")
     ->args({"label", "v", "step", "step_fast", "format", "flags"})
-    ->arg_init(5, make_smart<ExprConstInt>(0))
+    ->arg_init(5, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, ImGuiDataType, void *, const void *, const void *, const char *, ImGuiInputTextFlags), ImGui::InputScalar, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "InputScalar", "ImGui::InputScalar")
     ->args({"label", "data_type", "p_data", "p_step", "p_step_fast", "format", "flags"})
-    ->arg_init(3, make_smart<ExprConstPtr>())
-    ->arg_init(4, make_smart<ExprConstPtr>())
-    ->arg_init(5, make_smart<ExprConstPtr>())
-    ->arg_init(6, make_smart<ExprConstInt>(0))
+    ->arg_init(3, new ExprConstPtr())
+    ->arg_init(4, new ExprConstPtr())
+    ->arg_init(5, new ExprConstPtr())
+    ->arg_init(6, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, ImGuiDataType, void *, int, const void *, const void *, const char *, ImGuiInputTextFlags), ImGui::InputScalarN, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "InputScalarN", "ImGui::InputScalarN")
     ->args({"label", "data_type", "p_data", "components", "p_step", "p_step_fast", "format", "flags"})
-    ->arg_init(4, make_smart<ExprConstPtr>())
-    ->arg_init(5, make_smart<ExprConstPtr>())
-    ->arg_init(6, make_smart<ExprConstPtr>())
-    ->arg_init(7, make_smart<ExprConstInt>(0))
+    ->arg_init(4, new ExprConstPtr())
+    ->arg_init(5, new ExprConstPtr())
+    ->arg_init(6, new ExprConstPtr())
+    ->arg_init(7, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, ImGuiColorEditFlags), ImGui::ColorEdit3, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ColorEdit3", "ImGui::ColorEdit3")
     ->args({"label", "col", "flags"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, ImGuiColorEditFlags), ImGui::ColorEdit4, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ColorEdit4", "ImGui::ColorEdit4")
     ->args({"label", "col", "flags"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, ImGuiColorEditFlags), ImGui::ColorPicker3, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ColorPicker3", "ImGui::ColorPicker3")
     ->args({"label", "col", "flags"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, float *, ImGuiColorEditFlags, const float *), ImGui::ColorPicker4, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ColorPicker4", "ImGui::ColorPicker4")
     ->args({"label", "col", "flags", "ref_col"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
-    ->arg_init(3, make_smart<ExprConstPtr>())
+    ->arg_init(2, new ExprConstInt(0))
+    ->arg_init(3, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, const ImVec4 &, ImGuiColorEditFlags, const ImVec2 &), ImGui::ColorButton, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ColorButton", "ImGui::ColorButton")
     ->args({"desc_id", "col", "flags", "size"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
-    ->arg_init(3, make_smart<ExprCall>(LineInfo(), "ImVec2"))
+    ->arg_init(2, new ExprConstInt(0))
+    ->arg_init(3, new ExprCall(LineInfo(), "ImVec2"))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImGuiColorEditFlags), ImGui::SetColorEditOptions, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetColorEditOptions", "ImGui::SetColorEditOptions")
@@ -977,17 +977,17 @@ das::makeExtern<float(*)(void), ImGui::GetTreeNodeToLabelSpacing, das::SimNode_E
 
 das::makeExtern<bool(*)(const char *, ImGuiTreeNodeFlags), ImGui::CollapsingHeader, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "CollapsingHeader", "ImGui::CollapsingHeader")
     ->args({"label", "flags"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, bool *, ImGuiTreeNodeFlags), ImGui::CollapsingHeader, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "CollapsingHeader2", "ImGui::CollapsingHeader")
     ->args({"label", "p_visible", "flags"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(bool, ImGuiCond), ImGui::SetNextItemOpen, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetNextItemOpen", "ImGui::SetNextItemOpen")
     ->args({"is_open", "cond"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImGuiID), ImGui::SetNextItemStorageID, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetNextItemStorageID", "ImGui::SetNextItemStorageID")
@@ -1000,21 +1000,21 @@ das::makeExtern<bool(*)(ImGuiID), ImGui::TreeNodeGetOpen, das::SimNode_ExtFuncCa
 
 das::makeExtern<bool(*)(const char *, bool, ImGuiSelectableFlags, const ImVec2 &), ImGui::Selectable, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Selectable", "ImGui::Selectable")
     ->args({"label", "selected", "flags", "size"})
-    ->arg_init(1, make_smart<ExprConstBool>(false))
-    ->arg_init(2, make_smart<ExprConstInt>(0))
-    ->arg_init(3, make_smart<ExprCall>(LineInfo(), "ImVec2"))
+    ->arg_init(1, new ExprConstBool(false))
+    ->arg_init(2, new ExprConstInt(0))
+    ->arg_init(3, new ExprCall(LineInfo(), "ImVec2"))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, bool *, ImGuiSelectableFlags, const ImVec2 &), ImGui::Selectable, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Selectable2", "ImGui::Selectable")
     ->args({"label", "p_selected", "flags", "size"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
-    ->arg_init(3, make_smart<ExprCall>(LineInfo(), "ImVec2"))
+    ->arg_init(2, new ExprConstInt(0))
+    ->arg_init(3, new ExprCall(LineInfo(), "ImVec2"))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<ImGuiMultiSelectIO*(*)(ImGuiMultiSelectFlags, int, int), ImGui::BeginMultiSelect, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginMultiSelect", "ImGui::BeginMultiSelect")
     ->args({"flags", "selection_size", "items_count"})
-    ->arg_init(1, make_smart<ExprConstInt>(-1))
-    ->arg_init(2, make_smart<ExprConstInt>(-1))
+    ->arg_init(1, new ExprConstInt(-1))
+    ->arg_init(2, new ExprConstInt(-1))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<ImGuiMultiSelectIO*(*)(void), ImGui::EndMultiSelect, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "EndMultiSelect", "ImGui::EndMultiSelect")
@@ -1029,7 +1029,7 @@ das::makeExtern<bool(*)(void), ImGui::IsItemToggledSelection, das::SimNode_ExtFu
 
 das::makeExtern<bool(*)(const char *, const ImVec2 &), ImGui::BeginListBox, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginListBox", "ImGui::BeginListBox")
     ->args({"label", "size"})
-    ->arg_init(1, make_smart<ExprCall>(LineInfo(), "ImVec2"))
+    ->arg_init(1, new ExprCall(LineInfo(), "ImVec2"))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::EndListBox, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "EndListBox", "ImGui::EndListBox")
@@ -1037,27 +1037,27 @@ das::makeExtern<void(*)(void), ImGui::EndListBox, das::SimNode_ExtFuncCall, imgu
 
 das::makeExtern<bool(*)(const char *, int *, const char * const *, int, int), ImGui::ListBox, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ListBox", "ImGui::ListBox")
     ->args({"label", "current_item", "items", "items_count", "height_in_items"})
-    ->arg_init(4, make_smart<ExprConstInt>(-1))
+    ->arg_init(4, new ExprConstInt(-1))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const char *, const float *, int, int, const char *, float, float, ImVec2, int), ImGui::PlotLines, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "PlotLines", "ImGui::PlotLines")
     ->args({"label", "values", "values_count", "values_offset", "overlay_text", "scale_min", "scale_max", "graph_size", "stride"})
-    ->arg_init(3, make_smart<ExprConstInt>(0))
-    ->arg_init(4, make_smart<ExprConstPtr>())
-    ->arg_init(5, make_smart<ExprConstFloat>(FLT_MAX))
-    ->arg_init(6, make_smart<ExprConstFloat>(FLT_MAX))
-    ->arg_init(7, make_smart<ExprCall>(LineInfo(), "ImVec2"))
-    ->arg_init(8, make_smart<ExprConstInt>(int32_t(sizeof(float))))
+    ->arg_init(3, new ExprConstInt(0))
+    ->arg_init(4, new ExprConstPtr())
+    ->arg_init(5, new ExprConstFloat(FLT_MAX))
+    ->arg_init(6, new ExprConstFloat(FLT_MAX))
+    ->arg_init(7, new ExprCall(LineInfo(), "ImVec2"))
+    ->arg_init(8, new ExprConstInt(int32_t(sizeof(float))))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const char *, const float *, int, int, const char *, float, float, ImVec2, int), ImGui::PlotHistogram, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "PlotHistogram", "ImGui::PlotHistogram")
     ->args({"label", "values", "values_count", "values_offset", "overlay_text", "scale_min", "scale_max", "graph_size", "stride"})
-    ->arg_init(3, make_smart<ExprConstInt>(0))
-    ->arg_init(4, make_smart<ExprConstPtr>())
-    ->arg_init(5, make_smart<ExprConstFloat>(FLT_MAX))
-    ->arg_init(6, make_smart<ExprConstFloat>(FLT_MAX))
-    ->arg_init(7, make_smart<ExprCall>(LineInfo(), "ImVec2"))
-    ->arg_init(8, make_smart<ExprConstInt>(int32_t(sizeof(float))))
+    ->arg_init(3, new ExprConstInt(0))
+    ->arg_init(4, new ExprConstPtr())
+    ->arg_init(5, new ExprConstFloat(FLT_MAX))
+    ->arg_init(6, new ExprConstFloat(FLT_MAX))
+    ->arg_init(7, new ExprCall(LineInfo(), "ImVec2"))
+    ->arg_init(8, new ExprConstInt(int32_t(sizeof(float))))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const char *, bool), ImGui::Value, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Value", "ImGui::Value")
@@ -1074,7 +1074,7 @@ das::makeExtern<void(*)(const char *, unsigned int), ImGui::Value, das::SimNode_
 
 das::makeExtern<void(*)(const char *, float, const char *), ImGui::Value, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Value4", "ImGui::Value")
     ->args({"prefix", "v", "float_format"})
-    ->arg_init(2, make_smart<ExprConstPtr>())
+    ->arg_init(2, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(void), ImGui::BeginMenuBar, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginMenuBar", "ImGui::BeginMenuBar")
@@ -1091,7 +1091,7 @@ das::makeExtern<void(*)(void), ImGui::EndMainMenuBar, das::SimNode_ExtFuncCall, 
 
 das::makeExtern<bool(*)(const char *, bool), ImGui::BeginMenu, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginMenu", "ImGui::BeginMenu")
     ->args({"label", "enabled"})
-    ->arg_init(1, make_smart<ExprConstBool>(true))
+    ->arg_init(1, new ExprConstBool(true))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::EndMenu, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "EndMenu", "ImGui::EndMenu")
@@ -1099,14 +1099,14 @@ das::makeExtern<void(*)(void), ImGui::EndMenu, das::SimNode_ExtFuncCall, imguiTe
 
 das::makeExtern<bool(*)(const char *, const char *, bool, bool), ImGui::MenuItem, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "MenuItem", "ImGui::MenuItem")
     ->args({"label", "shortcut", "selected", "enabled"})
-    ->arg_init(1, make_smart<ExprConstPtr>())
-    ->arg_init(2, make_smart<ExprConstBool>(false))
-    ->arg_init(3, make_smart<ExprConstBool>(true))
+    ->arg_init(1, new ExprConstPtr())
+    ->arg_init(2, new ExprConstBool(false))
+    ->arg_init(3, new ExprConstBool(true))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, const char *, bool *, bool), ImGui::MenuItem, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "MenuItem2", "ImGui::MenuItem")
     ->args({"label", "shortcut", "p_selected", "enabled"})
-    ->arg_init(3, make_smart<ExprConstBool>(true))
+    ->arg_init(3, new ExprConstBool(true))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(void), ImGui::BeginTooltip, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginTooltip", "ImGui::BeginTooltip")
@@ -1120,13 +1120,13 @@ das::makeExtern<bool(*)(void), ImGui::BeginItemTooltip, das::SimNode_ExtFuncCall
 
 das::makeExtern<bool(*)(const char *, ImGuiWindowFlags), ImGui::BeginPopup, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginPopup", "ImGui::BeginPopup")
     ->args({"str_id", "flags"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, bool *, ImGuiWindowFlags), ImGui::BeginPopupModal, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginPopupModal", "ImGui::BeginPopupModal")
     ->args({"name", "p_open", "flags"})
-    ->arg_init(1, make_smart<ExprConstPtr>())
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstPtr())
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::EndPopup, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "EndPopup", "ImGui::EndPopup")
@@ -1134,18 +1134,18 @@ das::makeExtern<void(*)(void), ImGui::EndPopup, das::SimNode_ExtFuncCall, imguiT
 
 das::makeExtern<void(*)(const char *, ImGuiPopupFlags), ImGui::OpenPopup, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "OpenPopup", "ImGui::OpenPopup")
     ->args({"str_id", "popup_flags"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImGuiID, ImGuiPopupFlags), ImGui::OpenPopup, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "OpenPopup2", "ImGui::OpenPopup")
     ->args({"id", "popup_flags"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const char *, ImGuiPopupFlags), ImGui::OpenPopupOnItemClick, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "OpenPopupOnItemClick", "ImGui::OpenPopupOnItemClick")
     ->args({"str_id", "popup_flags"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(0, new ExprConstPtr())
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::CloseCurrentPopup, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "CloseCurrentPopup", "ImGui::CloseCurrentPopup")
@@ -1153,32 +1153,32 @@ das::makeExtern<void(*)(void), ImGui::CloseCurrentPopup, das::SimNode_ExtFuncCal
 
 das::makeExtern<bool(*)(const char *, ImGuiPopupFlags), ImGui::BeginPopupContextItem, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginPopupContextItem", "ImGui::BeginPopupContextItem")
     ->args({"str_id", "popup_flags"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(0, new ExprConstPtr())
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, ImGuiPopupFlags), ImGui::BeginPopupContextWindow, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginPopupContextWindow", "ImGui::BeginPopupContextWindow")
     ->args({"str_id", "popup_flags"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(0, new ExprConstPtr())
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, ImGuiPopupFlags), ImGui::BeginPopupContextVoid, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginPopupContextVoid", "ImGui::BeginPopupContextVoid")
     ->args({"str_id", "popup_flags"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(0, new ExprConstPtr())
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, ImGuiPopupFlags), ImGui::IsPopupOpen, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsPopupOpen", "ImGui::IsPopupOpen")
     ->args({"str_id", "flags"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, int, ImGuiTableFlags, const ImVec2 &, float), ImGui::BeginTable, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginTable", "ImGui::BeginTable")
     ->args({"str_id", "columns", "flags", "outer_size", "inner_width"})
-    ->arg_init(2, make_smart<ExprConstInt>(0))
-    ->arg_init(3, make_smart<ExprCall>(LineInfo(), "ImVec2"))
-    ->arg_init(4, make_smart<ExprConstFloat>(0.0f))
+    ->arg_init(2, new ExprConstInt(0))
+    ->arg_init(3, new ExprCall(LineInfo(), "ImVec2"))
+    ->arg_init(4, new ExprConstFloat(0.0f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::EndTable, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "EndTable", "ImGui::EndTable")
@@ -1186,8 +1186,8 @@ das::makeExtern<void(*)(void), ImGui::EndTable, das::SimNode_ExtFuncCall, imguiT
 
 das::makeExtern<void(*)(ImGuiTableRowFlags, float), ImGui::TableNextRow, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "TableNextRow", "ImGui::TableNextRow")
     ->args({"row_flags", "min_row_height"})
-    ->arg_init(0, make_smart<ExprConstInt>(0))
-    ->arg_init(1, make_smart<ExprConstFloat>(0.0f))
+    ->arg_init(0, new ExprConstInt(0))
+    ->arg_init(1, new ExprConstFloat(0.0f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(void), ImGui::TableNextColumn, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "TableNextColumn", "ImGui::TableNextColumn")
@@ -1199,9 +1199,9 @@ das::makeExtern<bool(*)(int), ImGui::TableSetColumnIndex, das::SimNode_ExtFuncCa
 
 das::makeExtern<void(*)(const char *, ImGuiTableColumnFlags, float, ImGuiID), ImGui::TableSetupColumn, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "TableSetupColumn", "ImGui::TableSetupColumn")
     ->args({"label", "flags", "init_width_or_weight", "user_id"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
-    ->arg_init(2, make_smart<ExprConstFloat>(0.0f))
-    ->arg_init(3, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
+    ->arg_init(2, new ExprConstFloat(0.0f))
+    ->arg_init(3, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(int, int), ImGui::TableSetupScrollFreeze, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "TableSetupScrollFreeze", "ImGui::TableSetupScrollFreeze")
@@ -1232,12 +1232,12 @@ das::makeExtern<int(*)(void), ImGui::TableGetRowIndex, das::SimNode_ExtFuncCall,
 
 das::makeExtern<const char*(*)(int), ImGui::TableGetColumnName, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "TableGetColumnName", "ImGui::TableGetColumnName")
     ->args({"column_n"})
-    ->arg_init(0, make_smart<ExprConstInt>(-1))
+    ->arg_init(0, new ExprConstInt(-1))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<ImGuiTableColumnFlags(*)(int), ImGui::TableGetColumnFlags, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "TableGetColumnFlags", "ImGui::TableGetColumnFlags")
     ->args({"column_n"})
-    ->arg_init(0, make_smart<ExprConstInt>(-1))
+    ->arg_init(0, new ExprConstInt(-1))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(int, bool), ImGui::TableSetColumnEnabled, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "TableSetColumnEnabled", "ImGui::TableSetColumnEnabled")
@@ -1249,14 +1249,14 @@ das::makeExtern<int(*)(void), ImGui::TableGetHoveredColumn, das::SimNode_ExtFunc
 
 das::makeExtern<void(*)(ImGuiTableBgTarget, ImU32, int), ImGui::TableSetBgColor, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "TableSetBgColor", "ImGui::TableSetBgColor")
     ->args({"target", "color", "column_n"})
-    ->arg_init(2, make_smart<ExprConstInt>(-1))
+    ->arg_init(2, new ExprConstInt(-1))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(int, const char *, bool), ImGui::Columns, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Columns", "ImGui::Columns")
     ->args({"count", "id", "borders"})
-    ->arg_init(0, make_smart<ExprConstInt>(1))
-    ->arg_init(1, make_smart<ExprConstPtr>())
-    ->arg_init(2, make_smart<ExprConstBool>(true))
+    ->arg_init(0, new ExprConstInt(1))
+    ->arg_init(1, new ExprConstPtr())
+    ->arg_init(2, new ExprConstBool(true))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::NextColumn, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "NextColumn", "ImGui::NextColumn")
@@ -1267,7 +1267,7 @@ das::makeExtern<int(*)(void), ImGui::GetColumnIndex, das::SimNode_ExtFuncCall, i
 
 das::makeExtern<float(*)(int), ImGui::GetColumnWidth, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "GetColumnWidth", "ImGui::GetColumnWidth")
     ->args({"column_index"})
-    ->arg_init(0, make_smart<ExprConstInt>(-1))
+    ->arg_init(0, new ExprConstInt(-1))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(int, float), ImGui::SetColumnWidth, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetColumnWidth", "ImGui::SetColumnWidth")
@@ -1276,7 +1276,7 @@ das::makeExtern<void(*)(int, float), ImGui::SetColumnWidth, das::SimNode_ExtFunc
 
 das::makeExtern<float(*)(int), ImGui::GetColumnOffset, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "GetColumnOffset", "ImGui::GetColumnOffset")
     ->args({"column_index"})
-    ->arg_init(0, make_smart<ExprConstInt>(-1))
+    ->arg_init(0, new ExprConstInt(-1))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(int, float), ImGui::SetColumnOffset, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetColumnOffset", "ImGui::SetColumnOffset")
@@ -1288,7 +1288,7 @@ das::makeExtern<int(*)(void), ImGui::GetColumnsCount, das::SimNode_ExtFuncCall, 
 
 das::makeExtern<bool(*)(const char *, ImGuiTabBarFlags), ImGui::BeginTabBar, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginTabBar", "ImGui::BeginTabBar")
     ->args({"str_id", "flags"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::EndTabBar, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "EndTabBar", "ImGui::EndTabBar")
@@ -1296,8 +1296,8 @@ das::makeExtern<void(*)(void), ImGui::EndTabBar, das::SimNode_ExtFuncCall, imgui
 
 das::makeExtern<bool(*)(const char *, bool *, ImGuiTabItemFlags), ImGui::BeginTabItem, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginTabItem", "ImGui::BeginTabItem")
     ->args({"label", "p_open", "flags"})
-    ->arg_init(1, make_smart<ExprConstPtr>())
-    ->arg_init(2, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstPtr())
+    ->arg_init(2, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::EndTabItem, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "EndTabItem", "ImGui::EndTabItem")
@@ -1305,7 +1305,7 @@ das::makeExtern<void(*)(void), ImGui::EndTabItem, das::SimNode_ExtFuncCall, imgu
 
 das::makeExtern<bool(*)(const char *, ImGuiTabItemFlags), ImGui::TabItemButton, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "TabItemButton", "ImGui::TabItemButton")
     ->args({"label", "flags"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const char *), ImGui::SetTabItemClosed, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetTabItemClosed", "ImGui::SetTabItemClosed")
@@ -1314,22 +1314,22 @@ das::makeExtern<void(*)(const char *), ImGui::SetTabItemClosed, das::SimNode_Ext
 
 das::makeExtern<ImGuiID(*)(ImGuiID, const ImVec2 &, ImGuiDockNodeFlags, const ImGuiWindowClass *), ImGui::DockSpace, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DockSpace", "ImGui::DockSpace")
     ->args({"dockspace_id", "size", "flags", "window_class"})
-    ->arg_init(1, make_smart<ExprCall>(LineInfo(), "ImVec2"))
-    ->arg_init(2, make_smart<ExprConstInt>(0))
-    ->arg_init(3, make_smart<ExprConstPtr>())
+    ->arg_init(1, new ExprCall(LineInfo(), "ImVec2"))
+    ->arg_init(2, new ExprConstInt(0))
+    ->arg_init(3, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<ImGuiID(*)(ImGuiID, const ImGuiViewport *, ImGuiDockNodeFlags, const ImGuiWindowClass *), ImGui::DockSpaceOverViewport, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DockSpaceOverViewport", "ImGui::DockSpaceOverViewport")
     ->args({"dockspace_id", "viewport", "flags", "window_class"})
-    ->arg_init(0, make_smart<ExprConstInt>(0))
-    ->arg_init(1, make_smart<ExprConstPtr>())
-    ->arg_init(2, make_smart<ExprConstInt>(0))
-    ->arg_init(3, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstInt(0))
+    ->arg_init(1, new ExprConstPtr())
+    ->arg_init(2, new ExprConstInt(0))
+    ->arg_init(3, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImGuiID, ImGuiCond), ImGui::SetNextWindowDockID, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetNextWindowDockID", "ImGui::SetNextWindowDockID")
     ->args({"dock_id", "cond"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const ImGuiWindowClass *), ImGui::SetNextWindowClass, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetNextWindowClass", "ImGui::SetNextWindowClass")
@@ -1344,18 +1344,18 @@ das::makeExtern<bool(*)(void), ImGui::IsWindowDocked, das::SimNode_ExtFuncCall, 
 
 das::makeExtern<void(*)(int), ImGui::LogToTTY, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "LogToTTY", "ImGui::LogToTTY")
     ->args({"auto_open_depth"})
-    ->arg_init(0, make_smart<ExprConstInt>(-1))
+    ->arg_init(0, new ExprConstInt(-1))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(int, const char *), ImGui::LogToFile, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "LogToFile", "ImGui::LogToFile")
     ->args({"auto_open_depth", "filename"})
-    ->arg_init(0, make_smart<ExprConstInt>(-1))
-    ->arg_init(1, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstInt(-1))
+    ->arg_init(1, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(int), ImGui::LogToClipboard, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "LogToClipboard", "ImGui::LogToClipboard")
     ->args({"auto_open_depth"})
-    ->arg_init(0, make_smart<ExprConstInt>(-1))
+    ->arg_init(0, new ExprConstInt(-1))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::LogFinish, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "LogFinish", "ImGui::LogFinish")
@@ -1366,12 +1366,12 @@ das::makeExtern<void(*)(void), ImGui::LogButtons, das::SimNode_ExtFuncCall, imgu
 
 das::makeExtern<bool(*)(ImGuiDragDropFlags), ImGui::BeginDragDropSource, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginDragDropSource", "ImGui::BeginDragDropSource")
     ->args({"flags"})
-    ->arg_init(0, make_smart<ExprConstInt>(0))
+    ->arg_init(0, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const char *, const void *, size_t, ImGuiCond), ImGui::SetDragDropPayload, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetDragDropPayload", "ImGui::SetDragDropPayload")
     ->args({"type", "data", "sz", "cond"})
-    ->arg_init(3, make_smart<ExprConstInt>(0))
+    ->arg_init(3, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::EndDragDropSource, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "EndDragDropSource", "ImGui::EndDragDropSource")
@@ -1382,7 +1382,7 @@ das::makeExtern<bool(*)(void), ImGui::BeginDragDropTarget, das::SimNode_ExtFuncC
 
 das::makeExtern<const ImGuiPayload*(*)(const char *, ImGuiDragDropFlags), ImGui::AcceptDragDropPayload, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "AcceptDragDropPayload", "ImGui::AcceptDragDropPayload")
     ->args({"type", "flags"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::EndDragDropTarget, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "EndDragDropTarget", "ImGui::EndDragDropTarget")
@@ -1393,7 +1393,7 @@ das::makeExtern<const ImGuiPayload*(*)(void), ImGui::GetDragDropPayload, das::Si
 
 das::makeExtern<void(*)(bool), ImGui::BeginDisabled, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "BeginDisabled", "ImGui::BeginDisabled")
     ->args({"disabled"})
-    ->arg_init(0, make_smart<ExprConstBool>(true))
+    ->arg_init(0, new ExprConstBool(true))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::EndDisabled, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "EndDisabled", "ImGui::EndDisabled")
@@ -1411,7 +1411,7 @@ das::makeExtern<void(*)(void), ImGui::SetItemDefaultFocus, das::SimNode_ExtFuncC
 
 das::makeExtern<void(*)(int), ImGui::SetKeyboardFocusHere, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetKeyboardFocusHere", "ImGui::SetKeyboardFocusHere")
     ->args({"offset"})
-    ->arg_init(0, make_smart<ExprConstInt>(0))
+    ->arg_init(0, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(bool), ImGui::SetNavCursorVisible, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetNavCursorVisible", "ImGui::SetNavCursorVisible")
@@ -1423,7 +1423,7 @@ das::makeExtern<void(*)(void), ImGui::SetNextItemAllowOverlap, das::SimNode_ExtF
 
 das::makeExtern<bool(*)(ImGuiHoveredFlags), ImGui::IsItemHovered, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsItemHovered", "ImGui::IsItemHovered")
     ->args({"flags"})
-    ->arg_init(0, make_smart<ExprConstInt>(0))
+    ->arg_init(0, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(void), ImGui::IsItemActive, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsItemActive", "ImGui::IsItemActive")
@@ -1434,7 +1434,7 @@ das::makeExtern<bool(*)(void), ImGui::IsItemFocused, das::SimNode_ExtFuncCall, i
 
 das::makeExtern<bool(*)(ImGuiMouseButton), ImGui::IsItemClicked, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsItemClicked", "ImGui::IsItemClicked")
     ->args({"mouse_button"})
-    ->arg_init(0, make_smart<ExprConstInt>(0))
+    ->arg_init(0, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(void), ImGui::IsItemVisible, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsItemVisible", "ImGui::IsItemVisible")
@@ -1484,12 +1484,12 @@ das::makeExtern<ImGuiViewport*(*)(void), ImGui::GetMainViewport, das::SimNode_Ex
 
 das::makeExtern<ImDrawList*(*)(ImGuiViewport *), ImGui::GetBackgroundDrawList, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "GetBackgroundDrawList", "ImGui::GetBackgroundDrawList")
     ->args({"viewport"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<ImDrawList*(*)(ImGuiViewport *), ImGui::GetForegroundDrawList, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "GetForegroundDrawList", "ImGui::GetForegroundDrawList")
     ->args({"viewport"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const ImVec2 &), ImGui::IsRectVisible, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsRectVisible", "ImGui::IsRectVisible")
@@ -1542,7 +1542,7 @@ das::makeExtern<bool(*)(ImGuiKey), ImGui::IsKeyDown, das::SimNode_ExtFuncCall, i
 
 das::makeExtern<bool(*)(ImGuiKey, bool), ImGui::IsKeyPressed, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsKeyPressed", "ImGui::IsKeyPressed")
     ->args({"key", "repeat"})
-    ->arg_init(1, make_smart<ExprConstBool>(true))
+    ->arg_init(1, new ExprConstBool(true))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(ImGuiKey), ImGui::IsKeyReleased, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsKeyReleased", "ImGui::IsKeyReleased")
@@ -1567,12 +1567,12 @@ das::makeExtern<void(*)(bool), ImGui::SetNextFrameWantCaptureKeyboard, das::SimN
 
 das::makeExtern<bool(*)(ImGuiKeyChord, ImGuiInputFlags), ImGui::Shortcut, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "Shortcut", "ImGui::Shortcut")
     ->args({"key_chord", "flags"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImGuiKeyChord, ImGuiInputFlags), ImGui::SetNextItemShortcut, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetNextItemShortcut", "ImGui::SetNextItemShortcut")
     ->args({"key_chord", "flags"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImGuiKey), ImGui::SetItemKeyOwner, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SetItemKeyOwner", "ImGui::SetItemKeyOwner")
@@ -1585,7 +1585,7 @@ das::makeExtern<bool(*)(ImGuiMouseButton), ImGui::IsMouseDown, das::SimNode_ExtF
 
 das::makeExtern<bool(*)(ImGuiMouseButton, bool), ImGui::IsMouseClicked, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsMouseClicked", "ImGui::IsMouseClicked")
     ->args({"button", "repeat"})
-    ->arg_init(1, make_smart<ExprConstBool>(false))
+    ->arg_init(1, new ExprConstBool(false))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(ImGuiMouseButton), ImGui::IsMouseReleased, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsMouseReleased", "ImGui::IsMouseReleased")
@@ -1606,12 +1606,12 @@ das::makeExtern<int(*)(ImGuiMouseButton), ImGui::GetMouseClickedCount, das::SimN
 
 das::makeExtern<bool(*)(const ImVec2 &, const ImVec2 &, bool), ImGui::IsMouseHoveringRect, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsMouseHoveringRect", "ImGui::IsMouseHoveringRect")
     ->args({"r_min", "r_max", "clip"})
-    ->arg_init(2, make_smart<ExprConstBool>(true))
+    ->arg_init(2, new ExprConstBool(true))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(const ImVec2 *), ImGui::IsMousePosValid, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsMousePosValid", "ImGui::IsMousePosValid")
     ->args({"mouse_pos"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<bool(*)(void), ImGui::IsAnyMouseDown, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsAnyMouseDown", "ImGui::IsAnyMouseDown")
@@ -1625,18 +1625,18 @@ das::makeExtern<ImVec2(*)(void), ImGui::GetMousePosOnOpeningCurrentPopup, das::S
 
 das::makeExtern<bool(*)(ImGuiMouseButton, float), ImGui::IsMouseDragging, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "IsMouseDragging", "ImGui::IsMouseDragging")
     ->args({"button", "lock_threshold"})
-    ->arg_init(1, make_smart<ExprConstFloat>(-1.0f))
+    ->arg_init(1, new ExprConstFloat(-1.0f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<ImVec2(*)(ImGuiMouseButton, float), ImGui::GetMouseDragDelta, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "GetMouseDragDelta", "ImGui::GetMouseDragDelta")
     ->args({"button", "lock_threshold"})
-    ->arg_init(0, make_smart<ExprConstInt>(0))
-    ->arg_init(1, make_smart<ExprConstFloat>(-1.0f))
+    ->arg_init(0, new ExprConstInt(0))
+    ->arg_init(1, new ExprConstFloat(-1.0f))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(ImGuiMouseButton), ImGui::ResetMouseDragDelta, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "ResetMouseDragDelta", "ImGui::ResetMouseDragDelta")
     ->args({"button"})
-    ->arg_init(0, make_smart<ExprConstInt>(0))
+    ->arg_init(0, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<ImGuiMouseCursor(*)(void), ImGui::GetMouseCursor, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "GetMouseCursor", "ImGui::GetMouseCursor")
@@ -1663,7 +1663,7 @@ das::makeExtern<void(*)(const char *), ImGui::LoadIniSettingsFromDisk, das::SimN
 
 das::makeExtern<void(*)(const char *, size_t), ImGui::LoadIniSettingsFromMemory, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "LoadIniSettingsFromMemory", "ImGui::LoadIniSettingsFromMemory")
     ->args({"ini_data", "ini_size"})
-    ->arg_init(1, make_smart<ExprConstInt>(0))
+    ->arg_init(1, new ExprConstInt(0))
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const char *), ImGui::SaveIniSettingsToDisk, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SaveIniSettingsToDisk", "ImGui::SaveIniSettingsToDisk")
@@ -1672,7 +1672,7 @@ das::makeExtern<void(*)(const char *), ImGui::SaveIniSettingsToDisk, das::SimNod
 
 das::makeExtern<const char*(*)(size_t *), ImGui::SaveIniSettingsToMemory, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "SaveIniSettingsToMemory", "ImGui::SaveIniSettingsToMemory")
     ->args({"out_ini_size"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(const char *), ImGui::DebugTextEncoding, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DebugTextEncoding", "ImGui::DebugTextEncoding")
@@ -1699,8 +1699,8 @@ das::makeExtern<void(*)(void), ImGui::UpdatePlatformWindows, das::SimNode_ExtFun
 
 das::makeExtern<void(*)(void *, void *), ImGui::RenderPlatformWindowsDefault, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "RenderPlatformWindowsDefault", "ImGui::RenderPlatformWindowsDefault")
     ->args({"platform_render_arg", "renderer_render_arg"})
-    ->arg_init(0, make_smart<ExprConstPtr>())
-    ->arg_init(1, make_smart<ExprConstPtr>())
+    ->arg_init(0, new ExprConstPtr())
+    ->arg_init(1, new ExprConstPtr())
     ->addToModule(*this, das::SideEffects::worstDefault);
 
 das::makeExtern<void(*)(void), ImGui::DestroyPlatformWindows, das::SimNode_ExtFuncCall, imguiTempFn>(lib, "DestroyPlatformWindows", "ImGui::DestroyPlatformWindows")

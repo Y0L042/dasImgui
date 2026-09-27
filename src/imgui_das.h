@@ -6,7 +6,7 @@
 #include <daScript/ast/ast.h>
 #include <daScript/ast/ast_interop.h>
 #include <daScript/ast/ast_handle.h>
-#include <daScript/ast/ast_typefactory_bind.h>
+//#include <daScript/ast/ast_typefactory_bind.h>
 #include <daScript/simulate/cast.h>
 
 namespace das {
@@ -14,7 +14,7 @@ namespace das {
 // --- ImColor: alias to float4 ---
 template <> struct typeFactory<ImColor> {
     static TypeDeclPtr make(const ModuleLibrary &) {
-        auto t = new TypeDecl(Type::tFloat4);
+        auto t = new TypeDecl(Type::tFloat4, cppBindingLineInfo());
         t->alias = "ImColor";
         t->aotAlias = true;
         return t;
@@ -35,7 +35,7 @@ template <> struct cast_arg<const ImColor &> {
 // --- ImVec2: alias to float2 ---
 template <> struct typeFactory<ImVec2> {
     static TypeDeclPtr make(const ModuleLibrary &) {
-        auto t = new TypeDecl(Type::tFloat2);
+        auto t = new TypeDecl(Type::tFloat2, cppBindingLineInfo());
         t->alias = "ImVec2";
         t->aotAlias = true;
         return t;
@@ -56,7 +56,7 @@ template <> struct cast_arg<const ImVec2 &> {
 // --- ImVec4: alias to float4 ---
 template <> struct typeFactory<ImVec4> {
     static TypeDeclPtr make(const ModuleLibrary &) {
-        auto t = new TypeDecl(Type::tFloat4);
+        auto t = new TypeDecl(Type::tFloat4, cppBindingLineInfo());
         t->alias = "ImVec4";
         t->aotAlias = true;
         return t;
@@ -188,22 +188,13 @@ struct imguiTempFn {
             }
         }
 
-        bool anyString = false;
         for (auto &arg : fn->arguments) {
-            if (arg->type->constant && arg->type->ref &&
-                arg->type->dim.size() == 0) {
+            if (arg->type->constant && arg->type->ref && !arg->type->isArray()) {
                 if (arg->type->baseType == Type::tFloat2 ||
                     arg->type->baseType == Type::tFloat4) {
                     arg->type->ref = false;
                 }
             }
-            if (arg->type->isString() && !arg->type->ref) {
-                anyString = true;
-            }
-        }
-
-        if (anyString) {
-            fn->needStringCast = true;
         }
 
         return true;

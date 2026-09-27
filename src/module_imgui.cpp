@@ -425,7 +425,7 @@ bool das::Module_imgui::initDependencies()
     initMain();
 
     // Compile embedded DAS modules
-      compileBuiltinModule("imgui_base.das", imgui_base_das, sizeof(imgui_base_das));
+      compileBuiltinModule(this, "imgui_base.das", imgui_base_das, sizeof(imgui_base_das));
     //  compileBuiltinModule("imgui_boost.das", imgui_boost_das, sizeof(imgui_boost_das));
 
     return true;

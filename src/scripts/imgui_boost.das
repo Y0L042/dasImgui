@@ -33,7 +33,7 @@ def make_input_buffer(var buf : ImGuiInputTextBuffer; txt : string; len : int) {
     buf.buffer |> resize(len)
     let bytes = clamp(length(txt), 0, len - 1)
     unsafe {
-        memcpy(addr(buf.buffer[0]), reinterpret<void?> txt, bytes)
+        memcpy(addr(buf.buffer[0]), reinterpret<void?>(txt), bytes)
     }
 }
 
@@ -53,14 +53,14 @@ def ImGuiInputTextBuffer(txt : string; len : int; var cb : lambda<(var it : ImGu
 def lock(buf : ImGuiInputTextBuffer; blk : block < (st : string#) : void >) {
     unsafe {
         let pbuf = addr(buf.buffer[0])
-        blk |> invoke(reinterpret<string#> pbuf)
+        blk |> invoke(reinterpret<string#>(pbuf))
     }
 }
 
 def to_string(buf : ImGuiInputTextBuffer) {
     unsafe {
         let pbuf = addr(buf.buffer[0])
-        return clone_string(reinterpret<string> pbuf)
+        return clone_string(reinterpret<string>(pbuf))
     }
 }
 
@@ -219,13 +219,13 @@ def PlotHistogram(lab : string; values : array<float>; values_offset : int = 0; 
 
 def CheckboxFlags(lab : string; var p_flags : auto(FLAGT)? implicit; flags : FLAGT) {
     unsafe {
-        return CheckboxFlags(lab, reinterpret<int?> p_flags, int(flags))
+        return CheckboxFlags(lab, reinterpret<int?>(p_flags), int(flags))
     }
 }
 
 def RadioButton(lab : string; var p_flags : auto(FLAGT)? implicit; flags : FLAGT) {
     unsafe {
-        return RadioButton(lab, reinterpret<int?> p_flags, int(flags))
+        return RadioButton(lab, reinterpret<int?>(p_flags), int(flags))
     }
 }
 
@@ -336,7 +336,7 @@ def Combo(name : string; var ent : auto(EnumT)&; max_height_in_items : int = -1)
             names |> push(ef.name)
         }
         unsafe {
-            return Combo(name, reinterpret<int?> addr(ent), names, max_height_in_items)
+            return Combo(name, reinterpret<int?>(addr(ent)), names, max_height_in_items)
         }
     }
     return false
@@ -351,7 +351,7 @@ def ListBox(name : string; var ent : auto(EnumT)&; max_height_in_items : int = -
             names |> push(ef.name)
         }
         unsafe {
-            return ListBox(name, reinterpret<int?> addr(ent), names, max_height_in_items)
+            return ListBox(name, reinterpret<int?>(addr(ent)), names, max_height_in_items)
         }
     }
     return false
